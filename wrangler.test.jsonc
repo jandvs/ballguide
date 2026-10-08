@@ -1,0 +1,6 @@
+{
+  "name": "ballguide-test",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./dist" },
+  "routes": [{ "pattern": "test.ballguide.net", "custom_domain": true }]
+}
