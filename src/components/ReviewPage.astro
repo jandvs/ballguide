@@ -1,20 +1,25 @@
 ---
 import Base from "../layouts/Base.astro";
 
-type ReviewerNote = { outlet: string; url: string; note: string };
-
 type Product = {
   id: string;
+  rank: number;
   name: string;
   brand: string;
-  tested: boolean;
-  limited: boolean;
-  hand: string | null;
-  soles: string | null;
-  fit: string | null;
-  bestFor: string | null;
-  myTake: string;
-  reviewerNotes: ReviewerNote[];
+  category: string;
+  priceRange: string;
+  releaseYear: number;
+  bestFor: string;
+  laneMatch: string;
+  bowlerMatch: string;
+  layoutTip: string;
+  coverstock?: string;
+  core?: string;
+  weightBlock?: string;
+  testedByMe?: boolean;
+  summary: string;
+  pros: string[];
+  cons: string[];
   affiliateUrl: string;
 };
 
@@ -34,7 +39,7 @@ const { title, description, heading, intro, updated, products, noindex } =
 // Flip to true only after Amazon Associates approves the account.
 const amazonAssociate = false;
 
-const dash = (value: string | null) => value ?? "To verify";
+const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
 ---
 
 <Base title={title} description={description} noindex={noindex}>
@@ -54,24 +59,24 @@ const dash = (value: string | null) => value ?? "To verify";
         <table>
           <thead>
             <tr>
-              <th scope="col">Shoe</th>
-              <th scope="col">Hand</th>
-              <th scope="col">Soles</th>
-              <th scope="col">Fit</th>
-              <th scope="col">Source of review</th>
+              <th scope="col">Rank</th>
+              <th scope="col">Product</th>
+              <th scope="col">Best for</th>
+              <th scope="col">Lane match</th>
+              <th scope="col">Price</th>
             </tr>
           </thead>
           <tbody>
             {
-              products.map((p) => (
+              rankedProducts.map((p) => (
                 <tr>
+                  <td>{p.rank}</td>
                   <th scope="row">
                     <a href={`#${p.id}`}>{p.name}</a>
                   </th>
-                  <td>{dash(p.hand)}</td>
-                  <td>{dash(p.soles)}</td>
-                  <td>{dash(p.fit)}</td>
-                  <td>{p.tested ? "Tested by me" : "Other reviewers"}</td>
+                  <td>{p.bestFor}</td>
+                  <td>{p.laneMatch}</td>
+                  <td>{p.priceRange}</td>
                 </tr>
               ))
             }
@@ -81,61 +86,92 @@ const dash = (value: string | null) => value ?? "To verify";
     </section>
 
     {
-      products.map((p) => (
-        <section class:list={["product", { tested: p.tested }]} id={p.id}>
+      rankedProducts.map((p) => (
+        <section class:list={["product", { tested: p.testedByMe }]} id={p.id}>
           <header>
-            <h2>{p.name}</h2>
+            <p class="rank">#{p.rank}</p>
+            <h2>{p.name} <span class="brand">by {p.brand}</span></h2>
             <p class="badge">
-              {p.tested ? "Tested by me" : "Based on other reviewers"}
+              {p.testedByMe
+                ? "Tested by me"
+                : "Researched from verified reviewer consensus"}
             </p>
           </header>
 
-          {p.bestFor && <p class="best-for">{p.bestFor}</p>}
+          <p class="summary">{p.summary}</p>
 
           <dl class="specs">
             <div>
-              <dt>Hand</dt>
-              <dd>{dash(p.hand)}</dd>
+              <dt>Category</dt>
+              <dd>{p.category}</dd>
             </div>
             <div>
-              <dt>Soles</dt>
-              <dd>{dash(p.soles)}</dd>
+              <dt>Best for</dt>
+              <dd>{p.bestFor}</dd>
             </div>
             <div>
-              <dt>Fit</dt>
-              <dd>{dash(p.fit)}</dd>
+              <dt>Lane match</dt>
+              <dd>{p.laneMatch}</dd>
+            </div>
+            <div>
+              <dt>Bowler match</dt>
+              <dd>{p.bowlerMatch}</dd>
+            </div>
+            <div>
+              <dt>Layout tip</dt>
+              <dd>{p.layoutTip}</dd>
+            </div>
+            <div>
+              <dt>Price range</dt>
+              <dd>{p.priceRange}</dd>
+            </div>
+            <div>
+              <dt>Release year</dt>
+              <dd>{p.releaseYear}</dd>
             </div>
           </dl>
 
-          {p.myTake && (
-            <div class="take">
-              <h3>My take</h3>
-              <p>{p.myTake}</p>
-            </div>
+          {(p.core || p.coverstock || p.weightBlock) && (
+            <dl class="tech-specs">
+              {p.core && (
+                <div>
+                  <dt>Core</dt>
+                  <dd>{p.core}</dd>
+                </div>
+              )}
+              {p.coverstock && (
+                <div>
+                  <dt>Coverstock</dt>
+                  <dd>{p.coverstock}</dd>
+                </div>
+              )}
+              {p.weightBlock && (
+                <div>
+                  <dt>Weight block</dt>
+                  <dd>{p.weightBlock}</dd>
+                </div>
+              )}
+            </dl>
           )}
 
-          {p.reviewerNotes.length > 0 && (
-            <div class="reviewers">
-              <h3>What other reviewers say</h3>
+          <div class="pros-cons">
+            <section>
+              <h3>Pros</h3>
               <ul>
-                {p.reviewerNotes.map((r) => (
-                  <li>
-                    <a href={r.url} rel="noopener">
-                      {r.outlet}
-                    </a>
-                    : {r.note}
-                  </li>
+                {p.pros.map((pro) => (
+                  <li>{pro}</li>
                 ))}
               </ul>
-            </div>
-          )}
-
-          {p.limited && (
-            <p class="limited">
-              Few reviews were available for this shoe when I checked, so treat
-              this section as a starting point.
-            </p>
-          )}
+            </section>
+            <section>
+              <h3>Cons</h3>
+              <ul>
+                {p.cons.map((con) => (
+                  <li>{con}</li>
+                ))}
+              </ul>
+            </section>
+          </div>
 
           {p.affiliateUrl && (
             <a
@@ -181,11 +217,12 @@ const dash = (value: string | null) => value ?? "To verify";
     overflow-x: auto;
     background: var(--surface);
     border: 1px solid var(--line);
+    border-radius: 0.5rem;
   }
 
   table {
     width: 100%;
-    min-width: 40rem;
+    min-width: 46rem;
     border-collapse: collapse;
     font-size: 0.95rem;
   }
@@ -218,11 +255,26 @@ const dash = (value: string | null) => value ?? "To verify";
     background: var(--surface);
     border: 1px solid var(--line);
     border-left: 6px solid var(--line);
+    border-radius: 0.5rem;
     max-width: 48rem;
   }
 
   .product.tested {
     border-left-color: var(--pin-red);
+  }
+
+  .rank {
+    color: var(--muted);
+    margin: 0;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .brand {
+    color: var(--muted);
+    font-size: 0.95rem;
+    font-weight: 400;
   }
 
   .badge {
@@ -236,7 +288,7 @@ const dash = (value: string | null) => value ?? "To verify";
     font-weight: 600;
   }
 
-  .best-for {
+  .summary {
     margin: 0 0 0.75rem;
   }
 
@@ -263,19 +315,38 @@ const dash = (value: string | null) => value ?? "To verify";
   }
 
   .take,
-  .reviewers {
+  .pros-cons {
     margin-top: 1rem;
   }
 
-  .reviewers ul {
-    margin: 0;
-    padding-left: 1.2rem;
+  .tech-specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 0.75rem;
+    margin-top: 1rem;
   }
 
-  .limited {
-    margin: 1rem 0 0;
-    color: var(--muted);
-    font-size: 0.92rem;
+  .tech-specs div {
+    border-top: 1px solid var(--line);
+    padding-top: 0.5rem;
+  }
+
+  .pros-cons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+
+  .pros-cons section {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 0.85rem;
+    border-radius: 0.35rem;
+  }
+
+  .pros-cons ul {
+    margin: 0;
+    padding-left: 1.2rem;
   }
 
   .buy {

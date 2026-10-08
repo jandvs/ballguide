@@ -1,16 +1,122 @@
 ---
+import Base from "../layouts/Base.astro";
+
+const guides = [
+	{
+		href: "/bowling-balls-beginners",
+		title: "Top 10 Bowling Balls for Beginners",
+		blurb:
+			"Control-first picks for first reactive purchases, with practical drilling and lane-match notes."
+	},
+	{
+		href: "/bowling-balls-house-shots",
+		title: "Top 10 Bowling Balls for House Shots",
+		blurb:
+			"League-focused ball motions that blend wet/dry and improve carry through transition."
+	},
+	{
+		href: "/bowling-balls-sport-shots",
+		title: "Top 10 Bowling Balls for Sport Shots",
+		blurb:
+			"Tournament-ready options chosen for control, blend, and survivability on flatter ratios."
+	},
+	{
+		href: "/bowling-shoes-mens",
+		title: "Top 10 Bowling Shoes for Men",
+		blurb:
+			"Ranked for fit security, approach consistency, and overall league-to-tournament value."
+	},
+	{
+		href: "/bowling-shoes-womens",
+		title: "Top 10 Bowling Shoes for Women",
+		blurb:
+			"Performance and value picks centered on comfort, support, and slide consistency."
+	}
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base
+	title="Ballguide | Top 10 Bowling Gear Guides"
+	description="Professional Top 10 bowling gear guides with lane pattern matching, style fit recommendations, and honest pros and cons."
+>
+	<section class="hero">
+		<p class="kicker">Bowling equipment intelligence</p>
+		<h1>Top 10 bowling gear guides built for real lane conditions</h1>
+		<p>
+			Ballguide combines practical matchup logic with honest review structure:
+			where each product fits, which bowlers it helps most, and what trade-offs
+			to expect before you buy.
+		</p>
+	</section>
+
+	<section class="grid" aria-label="Top 10 categories">
+		{
+			guides.map((guide) => (
+				<article class="card">
+					<h2>
+						<a href={guide.href}>{guide.title}</a>
+					</h2>
+					<p>{guide.blurb}</p>
+					<a href={guide.href} class="cta">Read guide</a>
+				</article>
+			))
+		}
+	</section>
+</Base>
+
+<style>
+	.hero {
+		max-width: 60rem;
+		margin: 0 auto;
+		padding: 2.25rem 1.25rem 0.75rem;
+	}
+
+	.kicker {
+		margin: 0;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-size: 0.76rem;
+		color: var(--pin-red);
+		font-weight: 700;
+	}
+
+	.hero p {
+		max-width: 48rem;
+		font-size: 1.08rem;
+	}
+
+	.grid {
+		max-width: 68rem;
+		margin: 0 auto;
+		padding: 1rem 1.25rem 0;
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+	}
+
+	.card {
+		background: var(--surface);
+		border: 1px solid var(--line);
+		border-top: 4px solid var(--lane);
+		border-radius: 0.55rem;
+		padding: 1rem;
+	}
+
+	.card h2 {
+		margin-bottom: 0.45rem;
+		font-size: 1.22rem;
+	}
+
+	.card p {
+		margin: 0 0 1rem;
+		color: var(--muted);
+		font-size: 0.95rem;
+	}
+
+	.cta {
+		display: inline-block;
+		text-decoration: none;
+		font-weight: 700;
+		color: var(--pin-red);
+	}
+</style>

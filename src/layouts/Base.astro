@@ -20,8 +20,18 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand">Ballguide</a>
-      <a href="/about" class="nav-link">About</a>
+      <div class="masthead">
+        <a href="/" class="brand">Ballguide</a>
+        <p class="tagline">Top 10 bowling gear guides with lane-match strategy</p>
+      </div>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="/bowling-balls-beginners" class="nav-link">Balls for Beginners</a>
+        <a href="/bowling-balls-house-shots" class="nav-link">Balls for House Shots</a>
+        <a href="/bowling-balls-sport-shots" class="nav-link">Balls for Sport Shots</a>
+        <a href="/bowling-shoes-mens" class="nav-link">Men's Shoes</a>
+        <a href="/bowling-shoes-womens" class="nav-link">Women's Shoes</a>
+        <a href="/about" class="nav-link">About</a>
+      </nav>
     </header>
     <main>
       <slot />
@@ -46,7 +56,7 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
     --pin-red: #b3261e;
     --lane: #c8a26b;
     --serif: Rockwell, "Roboto Slab", Georgia, serif;
-    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --sans: "Segoe UI", "Avenir Next", "Helvetica Neue", sans-serif;
   }
 
   *,
@@ -102,19 +112,30 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
 
   .site-header {
     border-bottom: 4px solid var(--pin-red);
-    background: var(--surface);
-    padding: 0.9rem 1.25rem;
+    background:
+      linear-gradient(135deg, #ffffff 0%, #f8f4ec 60%, #f2efe8 100%);
+    padding: 1rem 1.25rem 1.1rem;
+    display: grid;
+    gap: 0.85rem;
   }
 
-  .site-header {
+  .masthead {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
+    gap: 0.9rem;
+    flex-wrap: wrap;
   }
 
-  .nav-link {
-    font-size: 0.95rem;
+  .tagline {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
   }
 
   .brand {
@@ -122,6 +143,21 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
     font-weight: 700;
     font-size: 1.25rem;
     text-decoration: none;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--line);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 0.33rem 0.55rem;
+    border-radius: 999px;
+  }
+
+  .nav-link:hover {
+    border-color: var(--pin-red);
+    color: var(--pin-red);
   }
 
   .site-footer {
@@ -135,5 +171,12 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
   .site-footer p {
     max-width: 44rem;
     margin: 0 auto;
+  }
+
+  @media (max-width: 42rem) {
+    .tagline {
+      width: 100%;
+      font-size: 0.86rem;
+    }
   }
 </style>
