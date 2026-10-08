@@ -20,6 +20,7 @@ const { title, description, noindex = false } = Astro.props;
   <body>
     <header class="site-header">
       <a href="/" class="brand">Ballguide</a>
+      <a href="/about" class="nav-link">About</a>
     </header>
     <main>
       <slot />
@@ -102,6 +103,17 @@ const { title, description, noindex = false } = Astro.props;
     border-bottom: 4px solid var(--pin-red);
     background: var(--surface);
     padding: 0.9rem 1.25rem;
+  }
+
+  .site-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
   }
 
   .brand {
