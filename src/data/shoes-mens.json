@@ -1,0 +1,80 @@
+[
+  {
+    "id": "hammer-power-diesel",
+    "name": "Hammer Power Diesel (Black Night)",
+    "brand": "Hammer",
+    "tested": true,
+    "hand": "Right-hand model",
+    "soles": "Interchangeable",
+    "fit": "Dial",
+    "bestFor": "League bowlers who want a dial fit and swappable soles.",
+    "myTake": "I like the interchangeable soles and love the dial fit. They're easy to put on and take off. I asked the pro shop where I bought them what happens if the plastic laces break, and he said they won't; I haven't had any issues. I rarely change the sole, but I'd get a backup sole and break it in, so if something happens to the one you're using (like stepping in water) you can swap to one that feels exactly the same.",
+    "reviewerNotes": [],
+    "affiliateUrl": ""
+  },
+  {
+    "id": "dexter-sst-8-power-frame-boa",
+    "name": "Dexter SST 8 Power Frame BOA",
+    "brand": "Dexter",
+    "tested": false,
+    "hand": "Either hand (SST)",
+    "soles": "Interchangeable slide soles",
+    "fit": "BOA dial",
+    "bestFor": null,
+    "myTake": "",
+    "reviewerNotes": [],
+    "affiliateUrl": ""
+  },
+  {
+    "id": "dexter-pro-am-ii",
+    "name": "Dexter Pro Am II",
+    "brand": "Dexter",
+    "tested": false,
+    "hand": null,
+    "soles": null,
+    "fit": null,
+    "bestFor": null,
+    "myTake": "",
+    "reviewerNotes": [],
+    "affiliateUrl": ""
+  },
+  {
+    "id": "kr-strikeforce-flyer-mesh",
+    "name": "KR Strikeforce Flyer Mesh",
+    "brand": "KR Strikeforce",
+    "tested": false,
+    "hand": null,
+    "soles": null,
+    "fit": null,
+    "bestFor": null,
+    "myTake": "",
+    "reviewerNotes": [],
+    "affiliateUrl": ""
+  },
+  {
+    "id": "pyramid-path-lite",
+    "name": "Pyramid Path Lite Seamless Mesh",
+    "brand": "Pyramid",
+    "tested": false,
+    "hand": "Either hand",
+    "soles": "Universal slide soles",
+    "fit": "Knit upper",
+    "bestFor": null,
+    "myTake": "",
+    "reviewerNotes": [],
+    "affiliateUrl": ""
+  },
+  {
+    "id": "brunswick-renegade",
+    "name": "Brunswick Renegade",
+    "brand": "Brunswick",
+    "tested": false,
+    "hand": null,
+    "soles": null,
+    "fit": null,
+    "bestFor": null,
+    "myTake": "",
+    "reviewerNotes": [],
+    "affiliateUrl": ""
+  }
+]

@@ -1,0 +1,126 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  noindex?: boolean;
+}
+
+const { title, description, noindex = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="brand">Ballguide</a>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>
+        Ballguide is reader-supported. Some links are affiliate links, which
+        means I may earn a commission if you buy through them, at no extra cost
+        to you. I'm not affiliated with any of the brands covered here.
+      </p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --paper: #f6f7f5;
+    --surface: #ffffff;
+    --ink: #18212b;
+    --muted: #5b6672;
+    --line: #d9ddd8;
+    --pin-red: #b3261e;
+    --lane: #c8a26b;
+    --serif: Rockwell, "Roboto Slab", Georgia, serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--serif);
+    line-height: 1.2;
+    margin: 0 0 0.5rem;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 5vw, 2.75rem);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+  }
+
+  a {
+    color: var(--ink);
+    text-decoration-color: var(--pin-red);
+    text-underline-offset: 0.18em;
+  }
+
+  a:focus-visible,
+  .buy:focus-visible {
+    outline: 3px solid var(--pin-red);
+    outline-offset: 3px;
+  }
+
+  .site-header {
+    border-bottom: 4px solid var(--pin-red);
+    background: var(--surface);
+    padding: 0.9rem 1.25rem;
+  }
+
+  .brand {
+    font-family: var(--serif);
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+  }
+
+  .site-footer {
+    border-top: 1px solid var(--line);
+    margin-top: 4rem;
+    padding: 1.5rem 1.25rem 3rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .site-footer p {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+</style>

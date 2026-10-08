@@ -1,0 +1,276 @@
+---
+import Base from "../layouts/Base.astro";
+
+type ReviewerNote = { outlet: string; url: string; note: string };
+
+type Product = {
+  id: string;
+  name: string;
+  brand: string;
+  tested: boolean;
+  hand: string | null;
+  soles: string | null;
+  fit: string | null;
+  bestFor: string | null;
+  myTake: string;
+  reviewerNotes: ReviewerNote[];
+  affiliateUrl: string;
+};
+
+interface Props {
+  title: string;
+  description: string;
+  heading: string;
+  intro: string;
+  updated: string;
+  products: Product[];
+  noindex?: boolean;
+}
+
+const { title, description, heading, intro, updated, products, noindex } =
+  Astro.props;
+
+// Flip to true only after Amazon Associates approves the account.
+const amazonAssociate = false;
+
+const dash = (value: string | null) => value ?? "To verify";
+---
+
+<Base title={title} description={description} noindex={noindex}>
+  <article class="wrap">
+    <h1>{heading}</h1>
+    <p class="intro">{intro}</p>
+    <p class="disclosure">
+      Some links on this page are affiliate links. If you buy through them, I
+      may earn a commission at no extra cost to you.
+      {amazonAssociate && " As an Amazon Associate I earn from qualifying purchases."}
+    </p>
+    <p class="updated">Updated {updated}</p>
+
+    <section aria-labelledby="compare">
+      <h2 id="compare">Side by side</h2>
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Shoe</th>
+              <th scope="col">Hand</th>
+              <th scope="col">Soles</th>
+              <th scope="col">Fit</th>
+              <th scope="col">Source of review</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              products.map((p) => (
+                <tr>
+                  <th scope="row">
+                    <a href={`#${p.id}`}>{p.name}</a>
+                  </th>
+                  <td>{dash(p.hand)}</td>
+                  <td>{dash(p.soles)}</td>
+                  <td>{dash(p.fit)}</td>
+                  <td>{p.tested ? "Tested by me" : "Other reviewers"}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    {
+      products.map((p) => (
+        <section class:list={["product", { tested: p.tested }]} id={p.id}>
+          <header>
+            <h2>{p.name}</h2>
+            <p class="badge">
+              {p.tested ? "Tested by me" : "Based on other reviewers"}
+            </p>
+          </header>
+
+          {p.bestFor && <p class="best-for">{p.bestFor}</p>}
+
+          <dl class="specs">
+            <div>
+              <dt>Hand</dt>
+              <dd>{dash(p.hand)}</dd>
+            </div>
+            <div>
+              <dt>Soles</dt>
+              <dd>{dash(p.soles)}</dd>
+            </div>
+            <div>
+              <dt>Fit</dt>
+              <dd>{dash(p.fit)}</dd>
+            </div>
+          </dl>
+
+          {p.myTake && (
+            <div class="take">
+              <h3>My take</h3>
+              <p>{p.myTake}</p>
+            </div>
+          )}
+
+          {p.reviewerNotes.length > 0 && (
+            <div class="reviewers">
+              <h3>What other reviewers say</h3>
+              <ul>
+                {p.reviewerNotes.map((r) => (
+                  <li>
+                    <a href={r.url} rel="noopener">
+                      {r.outlet}
+                    </a>
+                    : {r.note}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {p.affiliateUrl && (
+            <a
+              class="buy"
+              href={p.affiliateUrl}
+              rel="sponsored nofollow noopener"
+              target="_blank"
+            >
+              Check current price
+            </a>
+          )}
+        </section>
+      ))
+    }
+  </article>
+</Base>
+
+<style>
+  .wrap {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 0;
+  }
+
+  .intro {
+    max-width: 44rem;
+    font-size: 1.15rem;
+  }
+
+  .disclosure,
+  .updated {
+    max-width: 44rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+    margin: 0.5rem 0;
+  }
+
+  section[aria-labelledby="compare"] {
+    margin-top: 2rem;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  table {
+    width: 100%;
+    min-width: 40rem;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+
+  th,
+  td {
+    text-align: left;
+    padding: 0.7rem 0.9rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+
+  thead th {
+    background: var(--paper);
+    font-weight: 600;
+  }
+
+  tbody th {
+    font-weight: 600;
+  }
+
+  tbody tr:last-child th,
+  tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .product {
+    margin-top: 2.5rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--line);
+    max-width: 48rem;
+  }
+
+  .product.tested {
+    border-left-color: var(--pin-red);
+  }
+
+  .badge {
+    margin: 0 0 0.75rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .product.tested .badge {
+    color: var(--pin-red);
+    font-weight: 600;
+  }
+
+  .best-for {
+    margin: 0 0 0.75rem;
+  }
+
+  .specs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 0.75rem;
+    margin: 0 0 1rem;
+  }
+
+  .specs div {
+    border-top: 2px solid var(--lane);
+    padding-top: 0.35rem;
+  }
+
+  dt {
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .take,
+  .reviewers {
+    margin-top: 1rem;
+  }
+
+  .reviewers ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .buy {
+    display: inline-block;
+    margin-top: 1.25rem;
+    padding: 0.7rem 1.1rem;
+    background: var(--pin-red);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>

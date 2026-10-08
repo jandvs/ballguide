@@ -1,0 +1,14 @@
+---
+import ReviewPage from "../components/ReviewPage.astro";
+import products from "../data/shoes-mens.json";
+---
+
+<ReviewPage
+  title="Men's bowling shoes compared | Ballguide"
+  description="Men's bowling shoes compared side by side, from a 40-year bowler who averages 200-210, with notes from other reviewers."
+  heading="Men's bowling shoes"
+  intro="I've bowled for 40 years and average 200 to 210. I've worn the Hammer on this list myself, so that review is firsthand. For the rest, I summarize what other reviewers found and link to them, and I mark each one so you know which is which."
+  updated="October 2026"
+  products={products}
+  noindex={true}
+/>
