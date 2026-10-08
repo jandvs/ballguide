@@ -8,6 +8,7 @@ type Product = {
   name: string;
   brand: string;
   tested: boolean;
+  limited: boolean;
   hand: string | null;
   soles: string | null;
   fit: string | null;
@@ -127,6 +128,13 @@ const dash = (value: string | null) => value ?? "To verify";
                 ))}
               </ul>
             </div>
+          )}
+
+          {p.limited && (
+            <p class="limited">
+              Few reviews were available for this shoe when I checked, so treat
+              this section as a starting point.
+            </p>
           )}
 
           {p.affiliateUrl && (
@@ -262,6 +270,12 @@ const dash = (value: string | null) => value ?? "To verify";
   .reviewers ul {
     margin: 0;
     padding-left: 1.2rem;
+  }
+
+  .limited {
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-size: 0.92rem;
   }
 
   .buy {

@@ -4,6 +4,7 @@
     "name": "Hammer Power Diesel (Black Night)",
     "brand": "Hammer",
     "tested": true,
+    "limited": false,
     "hand": "Right-hand model",
     "soles": "Interchangeable",
     "fit": "Dial",
@@ -17,12 +18,29 @@
     "name": "Dexter SST 8 Power Frame BOA",
     "brand": "Dexter",
     "tested": false,
-    "hand": "Either hand (SST)",
+    "limited": false,
+    "hand": "Either hand (swap the soles)",
     "soles": "Interchangeable slide soles",
     "fit": "BOA dial",
     "bestFor": null,
     "myTake": "",
-    "reviewerNotes": [],
+    "reviewerNotes": [
+      {
+        "outlet": "Bowling Life",
+        "url": "https://bowlinglife.eu/dexter-sst-8-power-frame-boa-bowling-shoes-in-depth-review",
+        "note": "Their testers found the shoes comfortable and durable, and said the BOA dial held up in extended use despite early doubts about its durability."
+      },
+      {
+        "outlet": "bowling.com (customer Q&A)",
+        "url": "https://bowling.com/products/dexter-mens-sst-8-power-frame-boa-black-wide-width-right-hand-or-left-hand.htm",
+        "note": "The retailer's answer says the BOA lacing system comes with a lifetime guarantee for repairs or replacements."
+      },
+      {
+        "outlet": "bowling.com (customer reviews)",
+        "url": "https://bowling.com/products/dexter-mens-sst-8-power-frame-boa-black-right-hand-or-left-hand.htm?a=25965",
+        "note": "A few buyers praise the true-to-size fit, the BOA dial, and the interchangeable slide soles."
+      }
+    ],
     "affiliateUrl": ""
   },
   {
@@ -30,12 +48,24 @@
     "name": "Dexter Pro Am II",
     "brand": "Dexter",
     "tested": false,
-    "hand": null,
-    "soles": null,
-    "fit": null,
+    "limited": false,
+    "hand": "Separate right- and left-hand models",
+    "soles": "Classic rubber outsole with a slide sole on the slide foot",
+    "fit": "Laces",
     "bestFor": null,
     "myTake": "",
-    "reviewerNotes": [],
+    "reviewerNotes": [
+      {
+        "outlet": "bowling.com (customer reviews)",
+        "url": "https://www.bowling.com/products/dexter-mens-pro-am-ii-right-hand.htm",
+        "note": "Buyers call it a comfortable, well-made step up from universal shoes and good value under $100. A few report stitching coming apart."
+      },
+      {
+        "outlet": "Dick's Sporting Goods (customer reviews)",
+        "url": "https://m2.dickssportinggoods.com/p/dexter-mens-pro-am-ii-left-hand-bowling-shoes-16dexmprmlfthndxxstg/16dexmprmlfthndxxstg",
+        "note": "Reviewers praise the comfort and its value for beginners. One says the laces loosen during a three-game set."
+      }
+    ],
     "affiliateUrl": ""
   },
   {
@@ -43,12 +73,24 @@
     "name": "KR Strikeforce Flyer Mesh",
     "brand": "KR Strikeforce",
     "tested": false,
-    "hand": null,
-    "soles": null,
+    "limited": true,
+    "hand": "Either hand (universal)",
+    "soles": "Fixed universal slide soles (not replaceable)",
     "fit": null,
     "bestFor": null,
     "myTake": "",
-    "reviewerNotes": [],
+    "reviewerNotes": [
+      {
+        "outlet": "bowling.com (customer reviews)",
+        "url": "https://apollo.bowling.com/products/kr-strikeforce-mens-flyer-mesh-black-steel.htm",
+        "note": "Buyers disagree on slide. Several say the shoes grip instead of sliding, and the retailer confirms the soles can't be swapped."
+      },
+      {
+        "outlet": "bowling.com (customer review)",
+        "url": "https://bowling.com/products/kr-strikeforce-mens-flyer-mesh-black-cardinal.htm",
+        "note": "One buyer found them lightweight and comfortable with a good fit."
+      }
+    ],
     "affiliateUrl": ""
   },
   {
@@ -56,9 +98,10 @@
     "name": "Pyramid Path Lite Seamless Mesh",
     "brand": "Pyramid",
     "tested": false,
-    "hand": "Either hand",
-    "soles": "Universal slide soles",
-    "fit": "Knit upper",
+    "limited": true,
+    "hand": "Either hand (universal)",
+    "soles": "Universal microfiber slide soles",
+    "fit": "Knit upper, removable footbed",
     "bestFor": null,
     "myTake": "",
     "reviewerNotes": [],
@@ -69,12 +112,24 @@
     "name": "Brunswick Renegade",
     "brand": "Brunswick",
     "tested": false,
-    "hand": null,
-    "soles": null,
+    "limited": true,
+    "hand": "Either hand (universal)",
+    "soles": "Universal microfiber slide soles",
     "fit": null,
     "bestFor": null,
     "myTake": "",
-    "reviewerNotes": [],
+    "reviewerNotes": [
+      {
+        "outlet": "bowling.com (customer review)",
+        "url": "https://bowling.com/products/brunswick-mens-renegade-black-red.htm",
+        "note": "A first-time buyer had no complaints."
+      },
+      {
+        "outlet": "bowling.com (customer review)",
+        "url": "https://bowling.com/products/brunswick-mens-renegade-mesh-wide-width.htm",
+        "note": "Another buyer found it comfortable with accurate sizing but reported black marks on the lane when dragging the sole."
+      }
+    ],
     "affiliateUrl": ""
   }
 ]
