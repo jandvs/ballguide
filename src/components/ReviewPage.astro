@@ -16,10 +16,32 @@ type Product = {
   coverstock?: string;
   core?: string;
   weightBlock?: string;
+  imageUrl?: string;
+  imageAlt?: string;
+  imageSourceLabel?: string;
+  imageSourceUrl?: string;
+  coreImageUrl?: string;
+  coreImageAlt?: string;
+  shellImageUrl?: string;
+  shellImageAlt?: string;
+  manufacturerSpecVerified?: boolean;
   testedByMe?: boolean;
   summary: string;
   pros: string[];
   cons: string[];
+  confidence?: "high" | "medium" | "low";
+  score?: {
+    laneFit: number;
+    carry: number;
+    versatility: number;
+    value: number;
+    total: number;
+  };
+  rankingEvidence?: string[];
+  sources?: {
+    label: string;
+    url: string;
+  }[];
   affiliateUrl: string;
 };
 
@@ -40,6 +62,15 @@ const { title, description, heading, intro, updated, products, noindex } =
 const amazonAssociate = false;
 
 const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
+
+const genericSpecPattern = /^(solid reactive|pearl reactive|hybrid reactive|urethane|asymmetric|symmetric)/i;
+
+const isLikelyGenericSpec = (value?: string) => {
+  if (!value) {
+    return false;
+  }
+  return genericSpecPattern.test(value.trim());
+};
 ---
 
 <Base title={title} description={description} noindex={noindex}>
@@ -98,7 +129,35 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
             </p>
           </header>
 
+          {p.imageUrl && !p.shellImageUrl && !p.coreImageUrl && (
+            <figure class="product-image">
+              <img
+                src={p.imageUrl}
+                alt={p.imageAlt ?? `${p.name} product image`}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          )}
+
           <p class="summary">{p.summary}</p>
+
+          {(p.confidence || p.score) && (
+            <div class="confidence">
+              {p.confidence && (
+                <p>
+                  <strong>Ranking confidence:</strong> {p.confidence}
+                </p>
+              )}
+              {p.score && (
+                <p>
+                  <strong>Score:</strong> {p.score.total}/100 (lane fit {p.score
+                    .laneFit}, carry {p.score.carry}, versatility {p.score
+                    .versatility}, value {p.score.value})
+                </p>
+              )}
+            </div>
+          )}
 
           <dl class="specs">
             <div>
@@ -133,16 +192,26 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
 
           {(p.core || p.coverstock || p.weightBlock) && (
             <dl class="tech-specs">
-              {p.core && (
-                <div>
-                  <dt>Core</dt>
-                  <dd>{p.core}</dd>
-                </div>
-              )}
               {p.coverstock && (
                 <div>
-                  <dt>Coverstock</dt>
-                  <dd>{p.coverstock}</dd>
+                  <dt>Coverstock (manufacturer)</dt>
+                  <dd>
+                    {p.coverstock}
+                    {(isLikelyGenericSpec(p.coverstock) || p.manufacturerSpecVerified === false) && (
+                      <span class="spec-flag">Unverified name</span>
+                    )}
+                  </dd>
+                </div>
+              )}
+              {p.core && (
+                <div>
+                  <dt>Core (manufacturer)</dt>
+                  <dd>
+                    {p.core}
+                    {(isLikelyGenericSpec(p.core) || p.manufacturerSpecVerified === false) && (
+                      <span class="spec-flag">Unverified name</span>
+                    )}
+                  </dd>
                 </div>
               )}
               {p.weightBlock && (
@@ -152,6 +221,31 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
                 </div>
               )}
             </dl>
+          )}
+
+          {(p.shellImageUrl || (p.coreImageUrl && p.coreImageUrl !== p.shellImageUrl)) && (
+            <section class="tech-images" aria-label="Technical images">
+              {p.shellImageUrl && (
+                <figure>
+                  <img
+                    src={p.shellImageUrl}
+                    alt={p.shellImageAlt ?? `${p.name} coverstock graphic`}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              )}
+              {p.coreImageUrl && p.coreImageUrl !== p.shellImageUrl && (
+                <figure>
+                  <img
+                    src={p.coreImageUrl}
+                    alt={p.coreImageAlt ?? `${p.name} core diagram`}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </figure>
+              )}
+            </section>
           )}
 
           <div class="pros-cons">
@@ -173,6 +267,32 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
             </section>
           </div>
 
+          {(p.rankingEvidence && p.rankingEvidence.length > 0) && (
+            <section class="evidence">
+              <h3>Why this rank</h3>
+              <ul>
+                {p.rankingEvidence.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {(p.sources && p.sources.length > 0) && (
+            <section class="sources">
+              <h3>Sources</h3>
+              <ul>
+                {p.sources.map((source) => (
+                  <li>
+                    <a href={source.url} rel="noopener nofollow" target="_blank">
+                      {source.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           {p.affiliateUrl && (
             <a
               class="buy"
@@ -188,6 +308,80 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
     }
   </article>
 </Base>
+
+<script>
+  const buildImageFingerprint = (img) => {
+    const width = Math.max(1, Math.min(32, img.naturalWidth || 1));
+    const height = Math.max(1, Math.min(32, img.naturalHeight || 1));
+    const canvas = document.createElement("canvas");
+    canvas.width = width;
+    canvas.height = height;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) {
+      return "";
+    }
+    ctx.drawImage(img, 0, 0, width, height);
+    const { data } = ctx.getImageData(0, 0, width, height);
+    let hash = 0;
+    for (let i = 0; i < data.length; i += 16) {
+      hash = (hash * 31 + data[i] + data[i + 1] + data[i + 2]) >>> 0;
+    }
+    return `${width}x${height}:${hash}`;
+  };
+
+  const dedupeTechImages = () => {
+    document.querySelectorAll(".tech-images").forEach((section) => {
+      const figures = Array.from(section.querySelectorAll("figure"));
+      if (figures.length < 2) {
+        return;
+      }
+      const images = figures
+        .map((figure) => figure.querySelector("img"))
+        .filter(Boolean);
+      if (images.length < 2 || !images[0].complete || !images[1].complete) {
+        return;
+      }
+      const first = images[0];
+      const second = images[1];
+      if (first.currentSrc === second.currentSrc) {
+        figures[1].remove();
+        return;
+      }
+      const firstPrint = buildImageFingerprint(first);
+      const secondPrint = buildImageFingerprint(second);
+      if (firstPrint && firstPrint === secondPrint) {
+        figures[1].remove();
+      }
+    });
+  };
+
+  const runWhenReady = () => {
+    const pending = Array.from(document.querySelectorAll(".tech-images img")).filter(
+      (img) => !img.complete
+    );
+    if (pending.length === 0) {
+      dedupeTechImages();
+      return;
+    }
+    let remaining = pending.length;
+    const done = () => {
+      remaining -= 1;
+      if (remaining <= 0) {
+        dedupeTechImages();
+      }
+    };
+    pending.forEach((img) => {
+      img.addEventListener("load", done, { once: true });
+      img.addEventListener("error", done, { once: true });
+    });
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runWhenReady, { once: true });
+  } else {
+    runWhenReady();
+  }
+</script>
 
 <style>
   .wrap {
@@ -292,6 +486,44 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
     margin: 0 0 0.75rem;
   }
 
+  .product-image {
+    margin: 0 0 1rem;
+  }
+
+  .product-image img {
+    width: 100%;
+    max-width: 24rem;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .product-image img:hover,
+  .product-image img:focus,
+  .product-image img:focus-visible {
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .confidence {
+    background: var(--paper);
+    border: 1px dashed var(--line);
+    padding: 0.75rem;
+    margin: 0 0 1rem;
+  }
+
+  .confidence p {
+    margin: 0.2rem 0;
+    font-size: 0.92rem;
+  }
+
   .specs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
@@ -331,6 +563,52 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
     padding-top: 0.5rem;
   }
 
+  .spec-flag {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.08rem 0.35rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    color: var(--muted);
+    vertical-align: middle;
+  }
+
+  .tech-images {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .tech-images figure {
+    margin: 0;
+  }
+
+  .tech-images img {
+    width: auto;
+    height: 200px;
+    max-width: 100%;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .tech-images img:hover,
+  .tech-images img:focus,
+  .tech-images img:focus-visible {
+    transform: none !important;
+    filter: none !important;
+  }
+
   .pros-cons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -345,6 +623,17 @@ const rankedProducts = [...products].sort((a, b) => a.rank - b.rank);
   }
 
   .pros-cons ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  .evidence,
+  .sources {
+    margin-top: 1rem;
+  }
+
+  .evidence ul,
+  .sources ul {
     margin: 0;
     padding-left: 1.2rem;
   }

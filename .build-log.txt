@@ -1,0 +1,28 @@
+
+> ballguide@0.0.1 build
+> astro build
+
+[2m14:29:20[22m [34m[types][39m Generated [2m240ms[22m
+[2m14:29:20[22m [34m[build][39m output: [34m"static"[39m
+[2m14:29:20[22m [34m[build][39m mode: [34m"static"[39m
+[2m14:29:20[22m [34m[build][39m directory: [34mC:\Users\jd_sm\source\repos\jandvs\ballguide\dist\[39m
+[2m14:29:20[22m [34m[build][39m Collecting build info...
+[2m14:29:20[22m [34m[build][39m [32m✓ Completed in 289ms.[39m
+[2m14:29:20[22m [34m[build][39m Building static entrypoints...
+[2m14:29:20[22m [34m[vite][39m [32m✓ built in 572ms[39m
+[2m14:29:20[22m [34m[vite][39m [32m✓ built in 111ms[39m
+[2m14:29:20[22m [34m[build][39m Rearranging server assets...
+
+[42m[30m generating static routes [39m[49m
+[2m14:29:20[22m   [34m├─[39m [2m/about/index.html[22m [2m(+34ms)[22m 
+[2m14:29:21[22m   [34m├─[39m [2m/bowling-balls-beginners/index.html[22m [2m(+20ms)[22m 
+[2m14:29:21[22m   [34m├─[39m [2m/bowling-balls-house-shots/index.html[22m [2m(+13ms)[22m 
+[2m14:29:21[22m   [34m├─[39m [2m/bowling-balls-sport-shots/index.html[22m [2m(+14ms)[22m 
+[2m14:29:21[22m   [34m├─[39m [2m/bowling-shoes-mens/index.html[22m [2m(+12ms)[22m 
+[2m14:29:21[22m   [34m├─[39m [2m/bowling-shoes-womens/index.html[22m [2m(+11ms)[22m 
+[2m14:29:21[22m   [34m├─[39m [2m/index.html[22m [2m(+9ms)[22m 
+[2m14:29:21[22m [32m✓ Completed in 152ms.
+[39m
+[2m14:29:21[22m [34m[build][39m [32m✓ Completed in 968ms.[39m
+[2m14:29:21[22m [34m[build][39m 7 page(s) built in [1m1.29s[22m
+[2m14:29:21[22m [34m[build][39m [1mComplete![22m

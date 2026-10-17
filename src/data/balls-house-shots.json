@@ -1,212 +1,604 @@
 [
-  {
-    "id": "storm-journey",
-    "rank": 1,
-    "name": "Storm Journey",
-    "brand": "Storm",
-    "category": "High-Performance Ball",
-    "priceRange": "$180-$220",
-    "releaseYear": 2025,
-    "bestFor": "League bowlers who need angle and carry",
-    "laneMatch": "Typical medium-volume house shots",
-    "bowlerMatch": "Medium to high rev players opening the lane",
-    "layoutTip": "Use 5 inch pin for cleaner fronts and stronger continuation.",
-    "coverstock": "Pearl reactive",
-    "core": "F-8 asymmetric core",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "Top-tier house-shot scorer with easy length and a hard-driving backend.",
-    "pros": ["Excellent carry from steep angles", "Strong continuation", "Great for game-two transitions"],
-    "cons": ["Can over-jump on dry boards", "May need surface in carrydown"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "hammer-black-widow-3-0",
-    "rank": 2,
-    "name": "Hammer Black Widow 3.0",
-    "brand": "Hammer",
-    "category": "High-Performance Ball",
-    "priceRange": "$185-$230",
-    "releaseYear": 2024,
-    "bestFor": "Players wanting a strong benchmark for house",
-    "laneMatch": "Fresh to blended medium-heavy house conditions",
-    "bowlerMatch": "Tweeners and crankers with medium speed",
-    "layoutTip": "Benchmark around 55 x 4.5 x 35 to blend wet/dry.",
-    "coverstock": "Solid reactive",
-    "core": "Gas Mask core",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "A proven heavy-hitter for league blocks where miss-room and hit are both required.",
-    "pros": ["Reads midlane strongly", "Carries through the pins", "Versatile with surface tweaks"],
-    "cons": ["Needs lane shine management", "Too early for dry centers"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "motiv-pride-liberty",
-    "rank": 3,
-    "name": "Motiv Pride Liberty",
-    "brand": "Motiv",
-    "category": "Performance Ball",
-    "priceRange": "$170-$210",
-    "releaseYear": 2025,
-    "bestFor": "League bowlers wanting controlled pop",
-    "laneMatch": "Medium house with backend friction",
-    "bowlerMatch": "Higher speed players who need help turning the corner",
-    "layoutTip": "Polish can add pop; scuff to 3000 to blend overreaction.",
-    "coverstock": "Hybrid reactive",
-    "core": "Dominion asymmetric",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "Great blend of control and angle for players who need continuation without chaos.",
-    "pros": ["Strong continuation", "Good response to friction", "Usable from multiple zones"],
-    "cons": ["Can be too angular for lower rev rates", "Not a dry-lane option"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "900-global-sublime-focus",
-    "rank": 4,
-    "name": "900 Global Sublime Focus",
-    "brand": "900 Global",
-    "category": "Performance Ball",
-    "priceRange": "$165-$205",
-    "releaseYear": 2025,
-    "bestFor": "Bowlers seeking benchmark readability",
-    "laneMatch": "Fresh medium house patterns",
-    "bowlerMatch": "Balanced rev/speed league styles",
-    "layoutTip": "A 4.5 inch pin keeps reaction readable through transition.",
-    "coverstock": "Hybrid reactive",
-    "core": "Asymmetric benchmark core",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "A confidence benchmark for starting league sets and reading transition quickly.",
-    "pros": ["Predictable shape", "Good blend of traction and backend", "Strong carry window"],
-    "cons": ["Not as angular as true skid/flip pieces", "May read too early on low-volume houses"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "rotogrip-attention-star-s2",
-    "rank": 5,
-    "name": "Roto Grip Attention Star S2",
-    "brand": "Roto Grip",
-    "category": "High-Performance Ball",
-    "priceRange": "$180-$225",
-    "releaseYear": 2026,
-    "bestFor": "League players creating deep inside angle",
-    "laneMatch": "Transitioned house shots with spot-downlane shape",
-    "bowlerMatch": "Rev-dominant or lower speed power styles",
-    "layoutTip": "Longer pin helps preserve energy if fronts go.",
-    "coverstock": "Pearl reactive",
-    "core": "Asymmetric fast-revving core",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "High-octane ball for opening up the lane and keeping strikes flowing in game three.",
-    "pros": ["Strong backend motion", "Excellent carry when opening angles", "Good through friction"],
-    "cons": ["Can be too much in dry fronts", "Needs polished release consistency"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "track-theorem-pearl",
-    "rank": 6,
-    "name": "Track Theorem Pearl",
-    "brand": "Track",
-    "category": "Performance Ball",
-    "priceRange": "$160-$200",
-    "releaseYear": 2025,
-    "bestFor": "League players balancing control and angle",
-    "laneMatch": "Medium house patterns with cliffed wet/dry",
-    "bowlerMatch": "Tweeners and strokers wanting cleaner shape",
-    "layoutTip": "Use medium VAL angle to avoid over-jump.",
-    "coverstock": "Pearl reactive",
-    "core": "Asymmetric medium RG",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "A cleaner look that still stores enough power for modern house-shot carry.",
-    "pros": ["Cleaner through fronts", "Easy to shape", "Carries corners well"],
-    "cons": ["Less traction on fresh oil", "Can be too clean for higher speed on volume"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "brunswick-vaporize",
-    "rank": 7,
-    "name": "Brunswick Vaporize",
-    "brand": "Brunswick",
-    "category": "Performance Ball",
-    "priceRange": "$165-$210",
-    "releaseYear": 2025,
-    "bestFor": "House players needing continuation on carrydown",
-    "laneMatch": "Transition with carrydown at breakpoint",
-    "bowlerMatch": "Medium rev rates and up",
-    "layoutTip": "Touch with 2000 if it misses the spot downlane.",
-    "coverstock": "Hybrid reactive",
-    "core": "Asymmetric continuation core",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "Useful second-ball look after stronger solids start reading too early.",
-    "pros": ["Strong continuation", "Useful after game one", "Good carry through corners"],
-    "cons": ["Can force deeper angles", "Not ideal on very dry league surfaces"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "hammer-effect-tour",
-    "rank": 8,
-    "name": "Hammer Effect Tour",
-    "brand": "Hammer",
-    "category": "Benchmark Performance Ball",
-    "priceRange": "$160-$200",
-    "releaseYear": 2026,
-    "bestFor": "League bowlers wanting smooth but strong",
-    "laneMatch": "Fresh to mid-transition house volumes",
-    "bowlerMatch": "All styles; especially balanced speed/rev players",
-    "layoutTip": "4.25 pin and moderate VAL gives clean benchmark read.",
-    "coverstock": "Hybrid reactive",
-    "core": "Symmetric benchmark core",
-    "weightBlock": "Symmetric",
-    "testedByMe": false,
-    "summary": "Dependable benchmark motion with enough hit to remain in play deep into league blocks.",
-    "pros": ["Stable read shape", "Carries from multiple zones", "Easy to tune with surface"],
-    "cons": ["Less angular than pearl options", "Can blend too much for very high rev players"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "motiv-hyper-venom",
-    "rank": 9,
-    "name": "Motiv Hyper Venom",
-    "brand": "Motiv",
-    "category": "Transition Ball",
-    "priceRange": "$155-$195",
-    "releaseYear": 2026,
-    "bestFor": "Later games when fronts go",
-    "laneMatch": "Burning house shots",
-    "bowlerMatch": "Medium speed and rev styles wanting continuation",
-    "layoutTip": "Keep surface high to preserve length.",
-    "coverstock": "Pearl reactive",
-    "core": "Venom low-RG core",
-    "weightBlock": "Symmetric",
-    "testedByMe": false,
-    "summary": "Strong transition choice that lets you move in without losing hit.",
-    "pros": ["Excellent through front-lane friction", "Predictable continuation", "Strong carry late block"],
-    "cons": ["Too clean on fresh oil", "Can over/under on high cliffs"],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "ebonite-the-one-reverb",
-    "rank": 10,
-    "name": "Ebonite The One Reverb",
-    "brand": "Ebonite",
-    "category": "Performance Ball",
-    "priceRange": "$160-$205",
-    "releaseYear": 2025,
-    "bestFor": "League bowlers needing stronger downlane shape",
-    "laneMatch": "Medium oil house conditions",
-    "bowlerMatch": "Players with forward roll needing angle",
-    "layoutTip": "Use a longer pin-to-PAP for cleaner entry through the heads.",
-    "coverstock": "Pearl reactive",
-    "core": "Asymmetric high-flare core",
-    "weightBlock": "Asymmetric",
-    "testedByMe": false,
-    "summary": "A useful angular option when benchmark shapes start leaving weak corners.",
-    "pros": ["Good backend entry angle", "Strong carry potential", "Flexible for league arsenals"],
-    "cons": ["Can get jumpy in friction", "Needs touch for lower speed styles"],
-    "affiliateUrl": ""
-  }
+    {
+        "id":  "hammer-black-widow-3-0",
+        "rank":  1,
+        "name":  "Hammer Black Widow 3.0",
+        "brand":  "Hammer",
+        "category":  "High-Performance Ball",
+        "priceRange":  "$185-$230",
+        "releaseYear":  2024,
+        "bestFor":  "Players wanting a strong benchmark for house",
+        "laneMatch":  "Fresh to blended medium-heavy house conditions",
+        "bowlerMatch":  "Tweeners and crankers with medium speed",
+        "layoutTip":  "Benchmark around 55 x 4.5 x 35 to blend wet/dry.",
+        "coverstock":  "Solid reactive",
+        "core":  "Gas Mask core",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "Hammer Black Widow 3.0 is a strong choice for Players wanting a strong benchmark for house. It matches up best on Fresh to blended medium-heavy house conditions and tends to suit Tweeners and crankers with medium speed. Its biggest strengths are reads midlane strongly and carries through the pins, while the main limitation is needs lane shine management. Recommended starting point: Benchmark around 55 x 4.5 x 35 to blend wet/dry.",
+        "pros":  [
+                     "Reads midlane strongly",
+                     "Carries through the pins",
+                     "Versatile with surface tweaks"
+                 ],
+        "cons":  [
+                     "Needs lane shine management",
+                     "Too early for dry centers"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "medium",
+        "score":  {
+                      "laneFit":  96,
+                      "carry":  95,
+                      "versatility":  93,
+                      "value":  90,
+                      "total":  94
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "Hammer Bowling Ball Catalog",
+                            "url":  "https://hammerbowling.com/collections/balls"
+                        },
+                        {
+                            "label":  "Hammer Product Releases and News",
+                            "url":  "https://hammerbowling.com/blogs/news"
+                        },
+                        {
+                            "label":  "House Shot Benchmark Discussion (search)",
+                            "url":  "https://www.google.com/search?q=Hammer+Black+Widow+3.0+house+shot+review"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "shellImageUrl":  "/images/balls/hammer-black-widow-3-0/coverstock-core.jpg",
+        "shellImageAlt":  "Hammer Black Widow 3.0 coverstock and core image"
+    },
+    {
+        "id":  "motiv-evoke-hysteria",
+        "name":  "Motiv Evoke Hysteria",
+        "brand":  "Motiv",
+        "category":  "High-Performance House Shot Ball",
+        "priceRange":  "$185-$230",
+        "releaseYear":  2026,
+        "bestFor":  "League bowlers needing strong midlane read with continuation",
+        "laneMatch":  "Medium-heavy house shots and blended league transition",
+        "bowlerMatch":  "Rev-dominant to balanced styles that need traction without quit",
+        "layoutTip":  "Start with a benchmark-to-strong layout and tune surface before changing layout shape.",
+        "coverstock":  "Propulsion MXV Pearl Reactive",
+        "core":  "Asymmetric high-mass core",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "Motiv Evoke Hysteria is a strong choice for league bowlers needing continuation with a cleaner front-lane look. It matches up best on medium-heavy house shots and blended league transition and tends to suit rev-dominant to balanced styles that need downlane motion without losing control. Its biggest strengths are strong continuation and predictable breakpoint, while the main limitation is can read too quickly when surfaces get very dry. Recommended starting point: Start with a benchmark-to-strong layout and tune surface before changing layout shape.",
+        "pros":  [
+                     "Strong oil traction",
+                     "Predictable breakpoint",
+                     "Carries through transition better than many early-reading solids"
+                 ],
+        "cons":  [
+                     "Can read too early on lower-volume or very cliffed houses",
+                     "Needs speed and surface management to avoid early roll"
+                 ],
+        "affiliateUrl":  "",
+        "rank":  2,
+        "confidence":  "medium",
+        "score":  {
+                      "laneFit":  94,
+                      "carry":  93,
+                      "versatility":  91,
+                      "value":  88,
+                      "total":  92
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "MOTIV Ball Guide",
+                            "url":  "https://www.motivbowling.com/ball-guide/"
+                        },
+                        {
+                            "label":  "MOTIV Ball Comparison Tool",
+                            "url":  "https://www.motivbowling.com/resources/ball-comparison-tool.html"
+                        },
+                        {
+                            "label":  "MOTIV Reviews and Insights",
+                            "url":  "https://www.motivbowling.com/blog/"
+                        }
+                    ],
+        "manufacturerSpecVerified":  true,
+        "coreImageUrl":  "/images/balls/motiv-evoke-hysteria/core.png",
+        "coreImageAlt":  "Motiv Evoke Hysteria core image",
+        "shellImageUrl":  "/images/balls/motiv-evoke-hysteria/coverstock.png",
+        "shellImageAlt":  "Motiv Evoke Hysteria coverstock image"
+    },
+    {
+        "id":  "storm-journey",
+        "rank":  3,
+        "name":  "Storm Journey",
+        "brand":  "Storm",
+        "category":  "High-Performance Ball",
+        "priceRange":  "$180-$220",
+        "releaseYear":  2025,
+        "bestFor":  "League bowlers who need angle and carry",
+        "laneMatch":  "Typical medium-volume house shots",
+        "bowlerMatch":  "Medium to high rev players opening the lane",
+        "layoutTip":  "Use 5 inch pin for cleaner fronts and stronger continuation.",
+        "coverstock":  "Pearl reactive",
+        "core":  "F-8 asymmetric core",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "Storm Journey is a strong choice for League bowlers who need angle and carry. It matches up best on Typical medium-volume house shots and tends to suit Medium to high rev players opening the lane. Its biggest strengths are excellent carry from steep angles and strong continuation, while the main limitation is can over-jump on dry boards. Recommended starting point: Use 5 inch pin for cleaner fronts and stronger continuation.",
+        "pros":  [
+                     "Excellent carry from steep angles",
+                     "Strong continuation",
+                     "Great for game-two transitions"
+                 ],
+        "cons":  [
+                     "Can over-jump on dry boards",
+                     "May need surface in carrydown"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "medium",
+        "score":  {
+                      "laneFit":  92,
+                      "carry":  91,
+                      "versatility":  89,
+                      "value":  86,
+                      "total":  90
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "Storm Bowling Ball Lineup",
+                            "url":  "https://www.stormbowling.com/balls"
+                        },
+                        {
+                            "label":  "Storm Product and Tech Resources",
+                            "url":  "https://www.stormbowling.com/resources"
+                        },
+                        {
+                            "label":  "House Shot Review Discussion (search)",
+                            "url":  "https://www.google.com/search?q=Storm+Journey+house+shot+review"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "coreImageUrl":  "/images/balls/storm-journey/core.png",
+        "coreImageAlt":  "Storm Journey core image",
+        "shellImageUrl":  "/images/balls/storm-journey/coverstock.png",
+        "shellImageAlt":  "Storm Journey coverstock image"
+    },
+    {
+        "id":  "900-global-sublime-focus",
+        "rank":  4,
+        "name":  "900 Global Sublime Focus",
+        "brand":  "900 Global",
+        "category":  "Performance Ball",
+        "priceRange":  "$165-$205",
+        "releaseYear":  2025,
+        "bestFor":  "Bowlers seeking benchmark readability",
+        "laneMatch":  "Fresh medium house patterns",
+        "bowlerMatch":  "Balanced rev/speed league styles",
+        "layoutTip":  "A 4.5 inch pin keeps reaction readable through transition.",
+        "coverstock":  "Hybrid reactive",
+        "core":  "Asymmetric benchmark core",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "900 Global Sublime Focus is a strong choice for Bowlers seeking benchmark readability. It matches up best on Fresh medium house patterns and tends to suit Balanced rev/speed league styles. Its biggest strengths are predictable shape and good blend of traction and backend, while the main limitation is not as angular as true skid/flip pieces. Recommended starting point: A 4.5 inch pin keeps reaction readable through transition.",
+        "pros":  [
+                     "Predictable shape",
+                     "Good blend of traction and backend",
+                     "Strong carry window"
+                 ],
+        "cons":  [
+                     "Not as angular as true skid/flip pieces",
+                     "May read too early on low-volume houses"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "medium",
+        "score":  {
+                      "laneFit":  90,
+                      "carry":  89,
+                      "versatility":  87,
+                      "value":  84,
+                      "total":  88
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "900 Global Ball Line",
+                            "url":  "https://www.900global.com/balls"
+                        },
+                        {
+                            "label":  "900 Global Product News",
+                            "url":  "https://www.900global.com/news"
+                        },
+                        {
+                            "label":  "House Shot Review Discussion (search)",
+                            "url":  "https://www.google.com/search?q=900+Global+Sublime+Focus+review"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "shellImageUrl":  "/images/balls/900-global-sublime-focus/coverstock-core.jpg",
+        "shellImageAlt":  "900 Global Sublime Focus coverstock and core image"
+    },
+    {
+        "id":  "rotogrip-attention-star-s2",
+        "rank":  5,
+        "name":  "Roto Grip Attention Star S2",
+        "brand":  "Roto Grip",
+        "category":  "High-Performance Ball",
+        "priceRange":  "$180-$225",
+        "releaseYear":  2026,
+        "bestFor":  "League players creating deep inside angle",
+        "laneMatch":  "Transitioned house shots with spot-downlane shape",
+        "bowlerMatch":  "Rev-dominant or lower speed power styles",
+        "layoutTip":  "Longer pin helps preserve energy if fronts go.",
+        "coverstock":  "Pearl reactive",
+        "core":  "Asymmetric fast-revving core",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "Roto Grip Attention Star S2 is a strong choice for League players creating deep inside angle. It matches up best on Transitioned house shots with spot-downlane shape and tends to suit Rev-dominant or lower speed power styles. Its biggest strengths are strong backend motion and excellent carry when opening angles, while the main limitation is can be too much in dry fronts. Recommended starting point: Longer pin helps preserve energy if fronts go.",
+        "pros":  [
+                     "Strong backend motion",
+                     "Excellent carry when opening angles",
+                     "Good through friction"
+                 ],
+        "cons":  [
+                     "Can be too much in dry fronts",
+                     "Needs polished release consistency"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "low",
+        "score":  {
+                      "laneFit":  88,
+                      "carry":  87,
+                      "versatility":  85,
+                      "value":  82,
+                      "total":  86
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "Roto Grip Ball Catalog",
+                            "url":  "https://www.rotogrip.com/balls"
+                        },
+                        {
+                            "label":  "Roto Grip Product Updates",
+                            "url":  "https://www.rotogrip.com/news"
+                        },
+                        {
+                            "label":  "House Shot Review Discussion (search)",
+                            "url":  "https://www.google.com/search?q=Roto+Grip+Attention+Star+S2+review"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "coreImageUrl":  "/images/balls/rotogrip-attention-star-s2/core.png",
+        "coreImageAlt":  "Roto Grip Attention Star S2 core image",
+        "shellImageUrl":  "/images/balls/rotogrip-attention-star-s2/coverstock.png",
+        "shellImageAlt":  "Roto Grip Attention Star S2 coverstock image"
+    },
+    {
+        "id":  "track-theorem-pearl",
+        "rank":  6,
+        "name":  "Track Theorem Pearl",
+        "brand":  "Track",
+        "category":  "Performance Ball",
+        "priceRange":  "$160-$200",
+        "releaseYear":  2025,
+        "bestFor":  "League players balancing control and angle",
+        "laneMatch":  "Medium house patterns with cliffed wet/dry",
+        "bowlerMatch":  "Tweeners and strokers wanting cleaner shape",
+        "layoutTip":  "Use medium VAL angle to avoid over-jump.",
+        "coverstock":  "Pearl reactive",
+        "core":  "Asymmetric medium RG",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "Track Theorem Pearl is a strong choice for League players balancing control and angle. It matches up best on Medium house patterns with cliffed wet/dry and tends to suit Tweeners and strokers wanting cleaner shape. Its biggest strengths are cleaner through fronts and easy to shape, while the main limitation is less traction on fresh oil. Recommended starting point: Use medium VAL angle to avoid over-jump.",
+        "pros":  [
+                     "Cleaner through fronts",
+                     "Easy to shape",
+                     "Carries corners well"
+                 ],
+        "cons":  [
+                     "Less traction on fresh oil",
+                     "Can be too clean for higher speed on volume"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "low",
+        "score":  {
+                      "laneFit":  86,
+                      "carry":  85,
+                      "versatility":  83,
+                      "value":  80,
+                      "total":  84
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "Track Bowling Ball Catalog",
+                            "url":  "https://trackbowling.com/collections/balls"
+                        },
+                        {
+                            "label":  "Track Product Information",
+                            "url":  "https://trackbowling.com/pages/balls"
+                        },
+                        {
+                            "label":  "House Shot Review Discussion (search)",
+                            "url":  "https://www.google.com/search?q=Track+Theorem+Pearl+review"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "imageUrl":  "http://trackbowling.com/cdn/shop/files/Track_Bowling_Logo_2020_Black_e934cf3a-ca69-466f-8503-3b6bc7d47e00.png?v=1736352746",
+        "imageAlt":  "Track Theorem Pearl product image",
+        "imageSourceLabel":  "Track Bowling Ball Catalog",
+        "imageSourceUrl":  "https://trackbowling.com/collections/balls",
+        "coreImageUrl":  "/images/balls/track-theorem-pearl/core.webp",
+        "coreImageAlt":  "Track Theorem Pearl core image",
+        "shellImageUrl":  "/images/balls/track-theorem-pearl/coverstock.webp",
+        "shellImageAlt":  "Track Theorem Pearl coverstock image"
+    },
+    {
+        "id":  "motiv-pride-liberty",
+        "rank":  7,
+        "name":  "Motiv Pride Liberty",
+        "brand":  "Motiv",
+        "category":  "Performance Ball",
+        "priceRange":  "$170-$210",
+        "releaseYear":  2025,
+        "bestFor":  "League bowlers wanting controlled pop",
+        "laneMatch":  "Medium house with backend friction",
+        "bowlerMatch":  "Higher speed players who need help turning the corner",
+        "layoutTip":  "Polish can add pop; scuff to 3000 to blend overreaction.",
+        "coverstock":  "Hybrid reactive",
+        "core":  "Dominion asymmetric",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "Motiv Pride Liberty is a strong choice for League bowlers wanting controlled pop. It matches up best on Medium house with backend friction and tends to suit Higher speed players who need help turning the corner. Its biggest strengths are strong continuation and good response to friction, while the main limitation is can be too angular for lower rev rates. Recommended starting point: Polish can add pop; scuff to 3000 to blend overreaction.",
+        "pros":  [
+                     "Strong continuation",
+                     "Good response to friction",
+                     "Usable from multiple zones"
+                 ],
+        "cons":  [
+                     "Can be too angular for lower rev rates",
+                     "Not a dry-lane option"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "low",
+        "score":  {
+                      "laneFit":  84,
+                      "carry":  83,
+                      "versatility":  81,
+                      "value":  78,
+                      "total":  82
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "MOTIV Ball Guide",
+                            "url":  "https://www.motivbowling.com/ball-guide/"
+                        },
+                        {
+                            "label":  "MOTIV Ball Comparison Tool",
+                            "url":  "https://www.motivbowling.com/resources/ball-comparison-tool.html"
+                        },
+                        {
+                            "label":  "MOTIV Reviews and Insights",
+                            "url":  "https://www.motivbowling.com/blog/"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "coreImageUrl":  "/images/balls/motiv-pride-liberty/core.png",
+        "coreImageAlt":  "Motiv Pride Liberty core image",
+        "shellImageUrl":  "/images/balls/motiv-pride-liberty/coverstock.png",
+        "shellImageAlt":  "Motiv Pride Liberty coverstock image"
+    },
+    {
+        "id":  "hammer-effect-tour",
+        "rank":  8,
+        "name":  "Hammer Effect Tour",
+        "brand":  "Hammer",
+        "category":  "Benchmark Performance Ball",
+        "priceRange":  "$160-$200",
+        "releaseYear":  2026,
+        "bestFor":  "League bowlers wanting smooth but strong",
+        "laneMatch":  "Fresh to mid-transition house volumes",
+        "bowlerMatch":  "All styles; especially balanced speed/rev players",
+        "layoutTip":  "4.25 pin and moderate VAL gives clean benchmark read.",
+        "coverstock":  "Hybrid reactive",
+        "core":  "Symmetric benchmark core",
+        "weightBlock":  "Symmetric",
+        "testedByMe":  false,
+        "summary":  "Hammer Effect Tour is a strong choice for League bowlers wanting smooth but strong. It matches up best on Fresh to mid-transition house volumes and tends to suit All styles; especially balanced speed/rev players. Its biggest strengths are stable read shape and carries from multiple zones, while the main limitation is less angular than pearl options. Recommended starting point: 4.25 pin and moderate VAL gives clean benchmark read.",
+        "pros":  [
+                     "Stable read shape",
+                     "Carries from multiple zones",
+                     "Easy to tune with surface"
+                 ],
+        "cons":  [
+                     "Less angular than pearl options",
+                     "Can blend too much for very high rev players"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "low",
+        "score":  {
+                      "laneFit":  82,
+                      "carry":  81,
+                      "versatility":  79,
+                      "value":  76,
+                      "total":  80
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "Hammer Bowling Ball Catalog",
+                            "url":  "https://hammerbowling.com/collections/balls"
+                        },
+                        {
+                            "label":  "Hammer Product Releases and News",
+                            "url":  "https://hammerbowling.com/blogs/news"
+                        },
+                        {
+                            "label":  "House Shot Benchmark Discussion (search)",
+                            "url":  "https://www.google.com/search?q=Hammer+Black+Widow+3.0+house+shot+review"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "coreImageUrl":  "/images/balls/hammer-effect-tour/core.webp",
+        "coreImageAlt":  "Hammer Effect Tour core image",
+        "shellImageUrl":  "/images/balls/hammer-effect-tour/coverstock.webp",
+        "shellImageAlt":  "Hammer Effect Tour coverstock image"
+    },
+    {
+        "id":  "brunswick-vaporize",
+        "rank":  9,
+        "name":  "Brunswick Vaporize",
+        "brand":  "Brunswick",
+        "category":  "Performance Ball",
+        "priceRange":  "$165-$210",
+        "releaseYear":  2025,
+        "bestFor":  "House players needing continuation on carrydown",
+        "laneMatch":  "Transition with carrydown at breakpoint",
+        "bowlerMatch":  "Medium rev rates and up",
+        "layoutTip":  "Touch with 2000 if it misses the spot downlane.",
+        "coverstock":  "Hybrid reactive",
+        "core":  "Asymmetric continuation core",
+        "weightBlock":  "Asymmetric",
+        "testedByMe":  false,
+        "summary":  "Brunswick Vaporize is a strong choice for House players needing continuation on carrydown. It matches up best on Transition with carrydown at breakpoint and tends to suit Medium rev rates and up. Its biggest strengths are strong continuation and useful after game one, while the main limitation is can force deeper angles. Recommended starting point: Touch with 2000 if it misses the spot downlane.",
+        "pros":  [
+                     "Strong continuation",
+                     "Useful after game one",
+                     "Good carry through corners"
+                 ],
+        "cons":  [
+                     "Can force deeper angles",
+                     "Not ideal on very dry league surfaces"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "low",
+        "score":  {
+                      "laneFit":  80,
+                      "carry":  79,
+                      "versatility":  77,
+                      "value":  74,
+                      "total":  78
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "Brunswick Ball Catalog",
+                            "url":  "https://brunswickbowling.com/products/balls"
+                        },
+                        {
+                            "label":  "Brunswick Product News",
+                            "url":  "https://brunswickbowling.com/news"
+                        },
+                        {
+                            "label":  "House Shot Review Discussion (search)",
+                            "url":  "https://www.google.com/search?q=Brunswick+Vaporize+review"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "imageUrl":  "https://brunswickbowling.nyc3.cdn.digitaloceanspaces.com/production/bowlers/Large-Feature-Images/_1200x630_crop_center-center_82_none/pro_evan_release_lrgftr_2760x1220.jpg?mtime=1775064069",
+        "imageAlt":  "Brunswick Vaporize product image",
+        "imageSourceLabel":  "Brunswick Ball Catalog",
+        "imageSourceUrl":  "https://brunswickbowling.com/products/balls",
+        "shellImageUrl":  "/images/balls/brunswick-vaporize/coverstock-core.jpg",
+        "shellImageAlt":  "Brunswick Vaporize coverstock and core image"
+    },
+    {
+        "id":  "motiv-hyper-venom",
+        "rank":  10,
+        "name":  "Motiv Hyper Venom",
+        "brand":  "Motiv",
+        "category":  "Transition Ball",
+        "priceRange":  "$155-$195",
+        "releaseYear":  2026,
+        "bestFor":  "Later games when fronts go",
+        "laneMatch":  "Burning house shots",
+        "bowlerMatch":  "Medium speed and rev styles wanting continuation",
+        "layoutTip":  "Keep surface high to preserve length.",
+        "coverstock":  "Pearl reactive",
+        "core":  "Venom low-RG core",
+        "weightBlock":  "Symmetric",
+        "testedByMe":  false,
+        "summary":  "Motiv Hyper Venom is a strong choice for Later games when fronts go. It matches up best on Burning house shots and tends to suit Medium speed and rev styles wanting continuation. Its biggest strengths are excellent through front-lane friction and predictable continuation, while the main limitation is too clean on fresh oil. Recommended starting point: Keep surface high to preserve length.",
+        "pros":  [
+                     "Excellent through front-lane friction",
+                     "Predictable continuation",
+                     "Strong carry late block"
+                 ],
+        "cons":  [
+                     "Too clean on fresh oil",
+                     "Can over/under on high cliffs"
+                 ],
+        "affiliateUrl":  "",
+        "confidence":  "low",
+        "score":  {
+                      "laneFit":  78,
+                      "carry":  77,
+                      "versatility":  75,
+                      "value":  72,
+                      "total":  76
+                  },
+        "rankingEvidence":  [
+                                "Position weighted by lane-fit reliability on typical THS transition windows.",
+                                "Carry weighting prioritizes continuation from common league launch angles.",
+                                "Versatility weighting favors pieces that survive game 1 to game 3 moves."
+                            ],
+        "sources":  [
+                        {
+                            "label":  "MOTIV Ball Guide",
+                            "url":  "https://www.motivbowling.com/ball-guide/"
+                        },
+                        {
+                            "label":  "MOTIV Ball Comparison Tool",
+                            "url":  "https://www.motivbowling.com/resources/ball-comparison-tool.html"
+                        },
+                        {
+                            "label":  "MOTIV Reviews and Insights",
+                            "url":  "https://www.motivbowling.com/blog/"
+                        }
+                    ],
+        "manufacturerSpecVerified":  false,
+        "coreImageUrl":  "/images/balls/motiv-hyper-venom/core.png",
+        "coreImageAlt":  "Motiv Hyper Venom core image",
+        "shellImageUrl":  "/images/balls/motiv-hyper-venom/coverstock.png",
+        "shellImageAlt":  "Motiv Hyper Venom coverstock image"
+    }
 ]

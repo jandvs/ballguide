@@ -7,6 +7,14 @@ interface Props {
 
 const { title, description } = Astro.props;
 const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true";
+const navLinks = [
+  { href: "/bowling-balls-beginners", label: "Balls for Beginners" },
+  { href: "/bowling-balls-house-shots", label: "Balls for House Shots" },
+  { href: "/bowling-balls-sport-shots", label: "Balls for Sport Shots" },
+  { href: "/bowling-shoes-mens", label: "Men's Shoes" },
+  { href: "/bowling-shoes-womens", label: "Women's Shoes" },
+  { href: "/about", label: "About" }
+];
 ---
 
 <!doctype html>
@@ -25,14 +33,31 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
         <p class="tagline">Top 10 bowling gear guides with lane-match strategy</p>
       </div>
       <nav class="top-nav" aria-label="Primary">
-        <a href="/bowling-balls-beginners" class="nav-link">Balls for Beginners</a>
-        <a href="/bowling-balls-house-shots" class="nav-link">Balls for House Shots</a>
-        <a href="/bowling-balls-sport-shots" class="nav-link">Balls for Sport Shots</a>
-        <a href="/bowling-shoes-mens" class="nav-link">Men's Shoes</a>
-        <a href="/bowling-shoes-womens" class="nav-link">Women's Shoes</a>
-        <a href="/about" class="nav-link">About</a>
+        {
+          navLinks.map((link) => (
+            <a href={link.href} class="nav-link">{link.label}</a>
+          ))
+        }
       </nav>
     </header>
+    <button
+      class="floating-menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="floating-menu-panel"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="floating-menu-panel" class="floating-menu-panel" aria-label="Floating primary" hidden>
+      {
+        navLinks.map((link) => (
+          <a href={link.href} class="floating-nav-link">{link.label}</a>
+        ))
+      }
+    </nav>
     <main>
       <slot />
     </main>
@@ -43,6 +68,73 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
         to you. I'm not affiliated with any of the brands covered here.
       </p>
     </footer>
+    <script>
+      (() => {
+        const topNav = document.querySelector(".top-nav");
+        const toggle = document.querySelector(".floating-menu-toggle");
+        const panel = document.querySelector(".floating-menu-panel");
+
+        if (!topNav || !toggle || !panel) {
+          return;
+        }
+
+        const setOpen = (open) => {
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+          panel.hidden = !open;
+        };
+
+        setOpen(false);
+
+        toggle.addEventListener("click", () => {
+          const isOpen = toggle.getAttribute("aria-expanded") === "true";
+          setOpen(!isOpen);
+        });
+
+        panel.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => setOpen(false));
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!(event.target instanceof Element)) {
+            return;
+          }
+          if (!panel.hidden && !panel.contains(event.target) && !toggle.contains(event.target)) {
+            setOpen(false);
+          }
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            setOpen(false);
+          }
+        });
+
+        const setFloatingVisible = (visible) => {
+          document.body.classList.toggle("show-floating-menu", visible);
+          if (!visible) {
+            setOpen(false);
+          }
+        };
+
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              const [entry] = entries;
+              setFloatingVisible(!entry.isIntersecting);
+            },
+            { threshold: 0 }
+          );
+          observer.observe(topNav);
+        } else {
+          const onScroll = () => {
+            const rect = topNav.getBoundingClientRect();
+            setFloatingVisible(rect.bottom < 0);
+          };
+          onScroll();
+          window.addEventListener("scroll", onScroll, { passive: true });
+        }
+      })();
+    </script>
   </body>
 </html>
 
@@ -171,6 +263,65 @@ const noindex = Astro.props.noindex || import.meta.env.PUBLIC_NOINDEX === "true"
   .site-footer p {
     max-width: 44rem;
     margin: 0 auto;
+  }
+
+  .floating-menu-toggle {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.96);
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    gap: 0.25rem;
+    z-index: 1000;
+    box-shadow: 0 10px 24px rgba(24, 33, 43, 0.14);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .floating-menu-toggle span {
+    width: 1.2rem;
+    height: 2px;
+    background: var(--ink);
+    display: block;
+  }
+
+  .floating-menu-panel {
+    position: fixed;
+    top: 3.6rem;
+    left: 0.75rem;
+    width: min(18rem, calc(100vw - 1.5rem));
+    background: rgba(255, 255, 255, 0.98);
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    padding: 0.55rem;
+    box-shadow: 0 14px 30px rgba(24, 33, 43, 0.16);
+    z-index: 1000;
+  }
+
+  .floating-nav-link {
+    display: block;
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+    border-radius: 0.4rem;
+    padding: 0.45rem 0.5rem;
+  }
+
+  .floating-nav-link:hover {
+    background: #f5f7fa;
+    color: var(--pin-red);
+  }
+
+  body.show-floating-menu .floating-menu-toggle {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   @media (max-width: 42rem) {

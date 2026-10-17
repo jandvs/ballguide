@@ -1,252 +1,292 @@
 [
-  {
-    "id": "dexter-sst-8-power-frame-boa",
-    "rank": 1,
-    "name": "Dexter SST 8 Power Frame BOA",
-    "brand": "Dexter",
-    "category": "Performance Shoe",
-    "priceRange": "$180-$230",
-    "releaseYear": 2024,
-    "bestFor": "Tournament and league players who tune slide",
-    "laneMatch": "All lane conditions because you can change traction and slide",
-    "bowlerMatch": "Matched for medium and high rev players needing stable timing",
-    "layoutTip": "Start with S8 sole and H5 heel, then move one step at a time.",
-    "testedByMe": false,
-    "summary": "The most complete performance option for bowlers who want repeatable footwork and premium support.",
-    "pros": [
-      "BOA closure stays secure",
-      "Interchangeable sole and heel system",
-      "Strong lateral support for power players"
-    ],
-    "cons": [
-      "Premium price",
-      "Break-in takes a few sessions"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "hammer-power-diesel",
-    "rank": 2,
-    "name": "Hammer Power Diesel",
-    "brand": "Hammer",
-    "category": "Performance Shoe",
-    "priceRange": "$150-$200",
-    "releaseYear": 2024,
-    "bestFor": "League bowlers wanting easy dial fit",
-    "laneMatch": "House and medium sport patterns",
-    "bowlerMatch": "Ideal for balanced styles that need predictable approach speed",
-    "layoutTip": "Keep a backup broken-in sole for wet approaches.",
-    "testedByMe": true,
-    "summary": "Great mix of comfort and adjustability, with a secure dial closure that feels quick and dependable.",
-    "pros": [
-      "Comfortable upper with supportive heel cup",
-      "Interchangeable sole platform",
-      "Fast on and off with dial system"
-    ],
-    "cons": [
-      "Not as many sole options as Dexter",
-      "Runs slightly warm in summer centers"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "3g-tour-ultra-c",
-    "rank": 3,
-    "name": "3G Tour Ultra C",
-    "brand": "3G",
-    "category": "Performance Shoe",
-    "priceRange": "$190-$240",
-    "releaseYear": 2025,
-    "bestFor": "High-volume tournament players",
-    "laneMatch": "Medium to long sport patterns",
-    "bowlerMatch": "Best for bowlers who post and need heel stability",
-    "layoutTip": "Pair with lower-friction heel for late block front-lane friction.",
-    "testedByMe": false,
-    "summary": "A premium stability-first shoe with a very planted feel at the line.",
-    "pros": [
-      "Very stable base",
-      "High-end build quality",
-      "Strong traction control"
-    ],
-    "cons": [
-      "Heavy compared to knit models",
-      "Higher replacement sole cost"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "brunswick-the-9",
-    "rank": 4,
-    "name": "Brunswick The 9",
-    "brand": "Brunswick",
-    "category": "Performance Shoe",
-    "priceRange": "$170-$220",
-    "releaseYear": 2024,
-    "bestFor": "Players wanting dual-slide flexibility",
-    "laneMatch": "Useful when centers vary from slick to tacky",
-    "bowlerMatch": "Works for crankers and tweeners with active feet",
-    "layoutTip": "Test one heel change before touching sole number.",
-    "testedByMe": false,
-    "summary": "Strong all-around tournament shoe with a broad set of traction options.",
-    "pros": [
-      "Interchangeability on both feet",
-      "Good durability",
-      "Comfortable toe box"
-    ],
-    "cons": [
-      "Can feel bulky",
-      "Sizing can be inconsistent across colorways"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "storm-sp3",
-    "rank": 5,
-    "name": "Storm SP3",
-    "brand": "Storm",
-    "category": "Hybrid Performance Shoe",
-    "priceRange": "$140-$180",
-    "releaseYear": 2024,
-    "bestFor": "League players stepping into interchangeable shoes",
-    "laneMatch": "Typical house conditions",
-    "bowlerMatch": "Great for medium-speed players needing comfort first",
-    "layoutTip": "Use medium slide sole first two weeks to settle timing.",
-    "testedByMe": false,
-    "summary": "A balanced value/performance option that does not punish players new to sole tuning.",
-    "pros": [
-      "Lighter than many performance shoes",
-      "Easy transition from entry-level footwear",
-      "Good value for features"
-    ],
-    "cons": [
-      "Not as supportive as premium options",
-      "Fewer fit widths"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "kr-strikeforce-tpc-hype",
-    "rank": 6,
-    "name": "KR Strikeforce TPC Hype",
-    "brand": "KR Strikeforce",
-    "category": "Performance Shoe",
-    "priceRange": "$140-$190",
-    "releaseYear": 2025,
-    "bestFor": "League and regional event bowlers",
-    "laneMatch": "Medium oil houses and blended sport shots",
-    "bowlerMatch": "Fits players with quicker approaches",
-    "layoutTip": "Increase heel friction if your trail foot slides too long.",
-    "testedByMe": false,
-    "summary": "Reliable mid-premium option with enough adjustability for most competitive environments.",
-    "pros": [
-      "Good sole and heel kit",
-      "Comfortable ankle padding",
-      "Strong value at sale pricing"
-    ],
-    "cons": [
-      "Break-in can feel stiff",
-      "Not the widest forefoot shape"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "dexter-pro-am-ii",
-    "rank": 7,
-    "name": "Dexter Pro Am II",
-    "brand": "Dexter",
-    "category": "Value Performance Shoe",
-    "priceRange": "$75-$105",
-    "releaseYear": 2023,
-    "bestFor": "Developing league bowlers",
-    "laneMatch": "House shots where fixed slide is acceptable",
-    "bowlerMatch": "Lower rev and straighter release players",
-    "layoutTip": "If slide is short, add shoe cover between shots to protect sole.",
-    "testedByMe": false,
-    "summary": "A dependable first serious shoe with better support than basic rental-style models.",
-    "pros": [
-      "Affordable and available everywhere",
-      "Comfortable out of the box",
-      "Good durability for the price"
-    ],
-    "cons": [
-      "No interchangeable soles",
-      "Less tuning control for tournaments"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "motiv-venom",
-    "rank": 8,
-    "name": "Motiv Venom Performance Shoe",
-    "brand": "Motiv",
-    "category": "Performance Shoe",
-    "priceRange": "$150-$190",
-    "releaseYear": 2025,
-    "bestFor": "Bowlers who prioritize heel lockdown",
-    "laneMatch": "Medium and medium-long conditions",
-    "bowlerMatch": "Great for high ball speed players needing approach control",
-    "layoutTip": "Choose higher-slide sole when fronts burn in game 3.",
-    "testedByMe": false,
-    "summary": "A stable, athletic-feeling model with a locked-in fit and strong support profile.",
-    "pros": [
-      "Excellent heel containment",
-      "Athletic shape",
-      "Solid outsole longevity"
-    ],
-    "cons": [
-      "Can feel narrow",
-      "Harder to find in local shops"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "pyramid-path-lite",
-    "rank": 9,
-    "name": "Pyramid Path Lite",
-    "brand": "Pyramid",
-    "category": "Entry-Level Shoe",
-    "priceRange": "$55-$85",
-    "releaseYear": 2024,
-    "bestFor": "Budget-conscious casual and beginner league bowlers",
-    "laneMatch": "Dry to medium-dry house approaches",
-    "bowlerMatch": "Players with slower footwork and simple timing",
-    "layoutTip": "Add felt shoe slider if your local center approaches run tacky.",
-    "testedByMe": false,
-    "summary": "Comfort-focused budget model for bowlers who want lightweight footwear at low cost.",
-    "pros": [
-      "Very light",
-      "Good entry price",
-      "Roomy fit"
-    ],
-    "cons": [
-      "Limited long-term durability",
-      "No performance tuning"
-    ],
-    "affiliateUrl": ""
-  },
-  {
-    "id": "brunswick-renegade",
-    "rank": 10,
-    "name": "Brunswick Renegade",
-    "brand": "Brunswick",
-    "category": "Entry-Level Shoe",
-    "priceRange": "$60-$95",
-    "releaseYear": 2024,
-    "bestFor": "New bowlers needing comfort and simple setup",
-    "laneMatch": "Recreation and league house shots",
-    "bowlerMatch": "Works best for straight or light-hook players",
-    "layoutTip": "Use approach powder sparingly if slide foot starts sticking.",
-    "testedByMe": false,
-    "summary": "Easy pick for newer players who need a clean, comfortable shoe at modest cost.",
-    "pros": [
-      "Accessible pricing",
-      "Comfortable upper",
-      "Widely available sizes"
-    ],
-    "cons": [
-      "Can mark lanes if dragged heavily",
-      "Not meant for high-volume tournament use"
-    ],
-    "affiliateUrl": ""
-  }
+    {
+        "id":  "dexter-sst-8-power-frame-boa",
+        "rank":  1,
+        "name":  "Dexter SST 8 Power Frame BOA",
+        "brand":  "Dexter",
+        "category":  "Performance Shoe",
+        "priceRange":  "$180-$230",
+        "releaseYear":  2024,
+        "bestFor":  "Tournament and league players who tune slide",
+        "laneMatch":  "All lane conditions because you can change traction and slide",
+        "bowlerMatch":  "Matched for medium and high rev players needing stable timing",
+        "layoutTip":  "Start with S8 sole and H5 heel, then move one step at a time.",
+        "testedByMe":  false,
+        "summary":  "Dexter SST 8 Power Frame BOA is a strong choice for Tournament and league players who tune slide. It matches up best on All lane conditions because you can change traction and slide and tends to suit Matched for medium and high rev players needing stable timing. Its biggest strengths are bOA closure stays secure and interchangeable sole and heel system, while the main limitation is premium price. Recommended starting point: Start with S8 sole and H5 heel, then move one step at a time.",
+        "pros":  [
+                     "BOA closure stays secure",
+                     "Interchangeable sole and heel system",
+                     "Strong lateral support for power players"
+                 ],
+        "cons":  [
+                     "Premium price",
+                     "Break-in takes a few sessions"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/dexter-sst-8-power-frame-boa/product.jpg",
+        "imageAlt":  "Dexter SST 8 Power Frame BOA bowling shoe product image",
+        "imageSourceLabel":  "BowlersMart",
+        "imageSourceUrl":  "https://www.bowlersmart.com/product/dexter-sst-8-power-frame-boa-blue-red-wide-mens-bowling-shoes/"
+    },
+    {
+        "id":  "hammer-power-diesel",
+        "rank":  2,
+        "name":  "Hammer Power Diesel",
+        "brand":  "Hammer",
+        "category":  "Performance Shoe",
+        "priceRange":  "$150-$200",
+        "releaseYear":  2024,
+        "bestFor":  "League bowlers wanting easy dial fit",
+        "laneMatch":  "House and medium sport patterns",
+        "bowlerMatch":  "Ideal for balanced styles that need predictable approach speed",
+        "layoutTip":  "Keep a backup broken-in sole for wet approaches.",
+        "testedByMe":  true,
+        "summary":  "Hammer Power Diesel is a strong choice for League bowlers wanting easy dial fit. It matches up best on House and medium sport patterns and tends to suit Ideal for balanced styles that need predictable approach speed. Its biggest strengths are comfortable upper with supportive heel cup and interchangeable sole platform, while the main limitation is not as many sole options as Dexter. Recommended starting point: Keep a backup broken-in sole for wet approaches.",
+        "pros":  [
+                     "Comfortable upper with supportive heel cup",
+                     "Interchangeable sole platform",
+                     "Fast on and off with dial system"
+                 ],
+        "cons":  [
+                     "Not as many sole options as Dexter",
+                     "Runs slightly warm in summer centers"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/hammer-power-diesel/product.jpg",
+        "imageAlt":  "Hammer Power Diesel bowling shoe product image",
+        "imageSourceLabel":  "BowlersMart",
+        "imageSourceUrl":  "https://www.bowlersmart.com/product/hammer-power-diesel-black-night-semi-custom-coolwick-bowling-jersey/"
+    },
+    {
+        "id":  "3g-tour-ultra-c",
+        "rank":  3,
+        "name":  "3G Tour Ultra C",
+        "brand":  "3G",
+        "category":  "Performance Shoe",
+        "priceRange":  "$190-$240",
+        "releaseYear":  2025,
+        "bestFor":  "High-volume tournament players",
+        "laneMatch":  "Medium to long sport patterns",
+        "bowlerMatch":  "Best for bowlers who post and need heel stability",
+        "layoutTip":  "Pair with lower-friction heel for late block front-lane friction.",
+        "testedByMe":  false,
+        "summary":  "3G Tour Ultra C is a strong choice for High-volume tournament players. It matches up best on Medium to long sport patterns and tends to suit Best for bowlers who post and need heel stability. Its biggest strengths are very stable base and high-end build quality, while the main limitation is heavy compared to knit models. Recommended starting point: Pair with lower-friction heel for late block front-lane friction.",
+        "pros":  [
+                     "Very stable base",
+                     "High-end build quality",
+                     "Strong traction control"
+                 ],
+        "cons":  [
+                     "Heavy compared to knit models",
+                     "Higher replacement sole cost"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/3g-tour-ultra-c/product.jpg",
+        "imageAlt":  "3G Tour Ultra C bowling shoe product image",
+        "imageSourceLabel":  "BowlersMart",
+        "imageSourceUrl":  "https://www.bowlersmart.com/product/3g-tour-ultra-c-white-mint-womens-right-hand-bowling-shoes/"
+    },
+    {
+        "id":  "brunswick-the-9",
+        "rank":  4,
+        "name":  "Brunswick The 9",
+        "brand":  "Brunswick",
+        "category":  "Performance Shoe",
+        "priceRange":  "$170-$220",
+        "releaseYear":  2024,
+        "bestFor":  "Players wanting dual-slide flexibility",
+        "laneMatch":  "Useful when centers vary from slick to tacky",
+        "bowlerMatch":  "Works for crankers and tweeners with active feet",
+        "layoutTip":  "Test one heel change before touching sole number.",
+        "testedByMe":  false,
+        "summary":  "Brunswick The 9 is a strong choice for Players wanting dual-slide flexibility. It matches up best on Useful when centers vary from slick to tacky and tends to suit Works for crankers and tweeners with active feet. Its biggest strengths are interchangeability on both feet and good durability, while the main limitation is can feel bulky. Recommended starting point: Test one heel change before touching sole number.",
+        "pros":  [
+                     "Interchangeability on both feet",
+                     "Good durability",
+                     "Comfortable toe box"
+                 ],
+        "cons":  [
+                     "Can feel bulky",
+                     "Sizing can be inconsistent across colorways"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/brunswick-the-9/product.jpg",
+        "imageAlt":  "Brunswick The 9 bowling shoe product image",
+        "imageSourceLabel":  "www.bowlersparadise.com",
+        "imageSourceUrl":  "https://www.bowlersparadise.com/products/brunswick-twist-lavender-lime-bowling-ball"
+    },
+    {
+        "id":  "storm-sp3",
+        "rank":  5,
+        "name":  "Storm SP3",
+        "brand":  "Storm",
+        "category":  "Hybrid Performance Shoe",
+        "priceRange":  "$140-$180",
+        "releaseYear":  2024,
+        "bestFor":  "League players stepping into interchangeable shoes",
+        "laneMatch":  "Typical house conditions",
+        "bowlerMatch":  "Great for medium-speed players needing comfort first",
+        "layoutTip":  "Use medium slide sole first two weeks to settle timing.",
+        "testedByMe":  false,
+        "summary":  "Storm SP3 is a strong choice for League players stepping into interchangeable shoes. It matches up best on Typical house conditions and tends to suit Great for medium-speed players needing comfort first. Its biggest strengths are lighter than many performance shoes and easy transition from entry-level footwear, while the main limitation is not as supportive as premium options. Recommended starting point: Use medium slide sole first two weeks to settle timing.",
+        "pros":  [
+                     "Lighter than many performance shoes",
+                     "Easy transition from entry-level footwear",
+                     "Good value for features"
+                 ],
+        "cons":  [
+                     "Not as supportive as premium options",
+                     "Fewer fit widths"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/storm-sp3/product.png",
+        "imageAlt":  "Storm SP3 bowling shoe product image",
+        "imageSourceLabel":  "www.bowlersparadise.com",
+        "imageSourceUrl":  "https://www.bowlersparadise.com/products/storm-tropical-surge-pearl-pink-purple-bowling-ball"
+    },
+    {
+        "id":  "kr-strikeforce-tpc-hype",
+        "rank":  6,
+        "name":  "KR Strikeforce TPC Hype",
+        "brand":  "KR Strikeforce",
+        "category":  "Performance Shoe",
+        "priceRange":  "$140-$190",
+        "releaseYear":  2025,
+        "bestFor":  "League and regional event bowlers",
+        "laneMatch":  "Medium oil houses and blended sport shots",
+        "bowlerMatch":  "Fits players with quicker approaches",
+        "layoutTip":  "Increase heel friction if your trail foot slides too long.",
+        "testedByMe":  false,
+        "summary":  "KR Strikeforce TPC Hype is a strong choice for League and regional event bowlers. It matches up best on Medium oil houses and blended sport shots and tends to suit Fits players with quicker approaches. Its biggest strengths are good sole and heel kit and comfortable ankle padding, while the main limitation is break-in can feel stiff. Recommended starting point: Increase heel friction if your trail foot slides too long.",
+        "pros":  [
+                     "Good sole and heel kit",
+                     "Comfortable ankle padding",
+                     "Strong value at sale pricing"
+                 ],
+        "cons":  [
+                     "Break-in can feel stiff",
+                     "Not the widest forefoot shape"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/kr-strikeforce-tpc-hype/product.jpg",
+        "imageAlt":  "KR Strikeforce TPC Hype bowling shoe product image",
+        "imageSourceLabel":  "BowlersMart",
+        "imageSourceUrl":  "https://www.bowlersmart.com/product/kr-strikeforce-tpc-hype-lt-black-mesh-right-hand-bowling-shoes/"
+    },
+    {
+        "id":  "dexter-pro-am-ii",
+        "rank":  7,
+        "name":  "Dexter Pro Am II",
+        "brand":  "Dexter",
+        "category":  "Value Performance Shoe",
+        "priceRange":  "$75-$105",
+        "releaseYear":  2023,
+        "bestFor":  "Developing league bowlers",
+        "laneMatch":  "House shots where fixed slide is acceptable",
+        "bowlerMatch":  "Lower rev and straighter release players",
+        "layoutTip":  "If slide is short, add shoe cover between shots to protect sole.",
+        "testedByMe":  false,
+        "summary":  "Dexter Pro Am II is a strong choice for Developing league bowlers. It matches up best on House shots where fixed slide is acceptable and tends to suit Lower rev and straighter release players. Its biggest strengths are affordable and available everywhere and comfortable out of the box, while the main limitation is no interchangeable soles. Recommended starting point: If slide is short, add shoe cover between shots to protect sole.",
+        "pros":  [
+                     "Affordable and available everywhere",
+                     "Comfortable out of the box",
+                     "Good durability for the price"
+                 ],
+        "cons":  [
+                     "No interchangeable soles",
+                     "Less tuning control for tournaments"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/dexter-pro-am-ii/product.jpg",
+        "imageAlt":  "Dexter Pro Am II bowling shoe product image",
+        "imageSourceLabel":  "www.bowlersparadise.com",
+        "imageSourceUrl":  "https://www.bowlersparadise.com/products/dexter-pro-am-ii-black-grey-right-hand-mens-bowling-shoes"
+    },
+    {
+        "id":  "motiv-venom",
+        "rank":  8,
+        "name":  "Motiv Venom Performance Shoe",
+        "brand":  "Motiv",
+        "category":  "Performance Shoe",
+        "priceRange":  "$150-$190",
+        "releaseYear":  2025,
+        "bestFor":  "Bowlers who prioritize heel lockdown",
+        "laneMatch":  "Medium and medium-long conditions",
+        "bowlerMatch":  "Great for high ball speed players needing approach control",
+        "layoutTip":  "Choose higher-slide sole when fronts burn in game 3.",
+        "testedByMe":  false,
+        "summary":  "Motiv Venom Performance Shoe is a strong choice for Bowlers who prioritize heel lockdown. It matches up best on Medium and medium-long conditions and tends to suit Great for high ball speed players needing approach control. Its biggest strengths are excellent heel containment and athletic shape, while the main limitation is can feel narrow. Recommended starting point: Choose higher-slide sole when fronts burn in game 3.",
+        "pros":  [
+                     "Excellent heel containment",
+                     "Athletic shape",
+                     "Solid outsole longevity"
+                 ],
+        "cons":  [
+                     "Can feel narrow",
+                     "Harder to find in local shops"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/motiv-venom/product.png",
+        "imageAlt":  "Motiv Venom Performance Shoe bowling shoe product image",
+        "imageSourceLabel":  "www.bowlersparadise.com",
+        "imageSourceUrl":  "https://www.bowlersparadise.com/products/motiv-venom-hysteria-bowling-ball"
+    },
+    {
+        "id":  "pyramid-path-lite",
+        "rank":  9,
+        "name":  "Pyramid Path Lite",
+        "brand":  "Pyramid",
+        "category":  "Entry-Level Shoe",
+        "priceRange":  "$55-$85",
+        "releaseYear":  2024,
+        "bestFor":  "Budget-conscious casual and beginner league bowlers",
+        "laneMatch":  "Dry to medium-dry house approaches",
+        "bowlerMatch":  "Players with slower footwork and simple timing",
+        "layoutTip":  "Add felt shoe slider if your local center approaches run tacky.",
+        "testedByMe":  false,
+        "summary":  "Pyramid Path Lite is a strong choice for Budget-conscious casual and beginner league bowlers. It matches up best on Dry to medium-dry house approaches and tends to suit Players with slower footwork and simple timing. Its biggest strengths are very light and good entry price, while the main limitation is limited long-term durability. Recommended starting point: Add felt shoe slider if your local center approaches run tacky.",
+        "pros":  [
+                     "Very light",
+                     "Good entry price",
+                     "Roomy fit"
+                 ],
+        "cons":  [
+                     "Limited long-term durability",
+                     "No performance tuning"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/pyramid-path-lite/product.png",
+        "imageAlt":  "Pyramid Path Lite bowling shoe product image",
+        "imageSourceLabel":  "www.bowlersparadise.com",
+        "imageSourceUrl":  "https://www.bowlersparadise.com/products/dexter-t-h-e-c9-techknit-boa-bowling-shoes-men-s-performance-bowling-shoes"
+    },
+    {
+        "id":  "brunswick-renegade",
+        "rank":  10,
+        "name":  "Brunswick Renegade",
+        "brand":  "Brunswick",
+        "category":  "Entry-Level Shoe",
+        "priceRange":  "$60-$95",
+        "releaseYear":  2024,
+        "bestFor":  "New bowlers needing comfort and simple setup",
+        "laneMatch":  "Recreation and league house shots",
+        "bowlerMatch":  "Works best for straight or light-hook players",
+        "layoutTip":  "Use approach powder sparingly if slide foot starts sticking.",
+        "testedByMe":  false,
+        "summary":  "Brunswick Renegade is a strong choice for New bowlers needing comfort and simple setup. It matches up best on Recreation and league house shots and tends to suit Works best for straight or light-hook players. Its biggest strengths are accessible pricing and comfortable upper, while the main limitation is can mark lanes if dragged heavily. Recommended starting point: Use approach powder sparingly if slide foot starts sticking.",
+        "pros":  [
+                     "Accessible pricing",
+                     "Comfortable upper",
+                     "Widely available sizes"
+                 ],
+        "cons":  [
+                     "Can mark lanes if dragged heavily",
+                     "Not meant for high-volume tournament use"
+                 ],
+        "affiliateUrl":  "",
+        "imageUrl":  "/images/shoes/brunswick-renegade/product.jpg",
+        "imageAlt":  "Brunswick Renegade bowling shoe product image",
+        "imageSourceLabel":  "BowlersMart",
+        "imageSourceUrl":  "https://www.bowlersmart.com/product/brunswick-renegade-mesh-blue-mens-bowling-shoes/"
+    }
 ]

@@ -14,6 +14,19 @@ This site needs to be like a Top 10 for each type: ie. Top 10 Bowling Balls for 
 
 You are also gifted in profession content design for the website.  Make the sight look professional.
 
+Try to find ball images in one of these links.
+
+This one lists  more current balls the links from that page contain the ball coverstock&core images.  I believe it's always one file which we'll save as coverstock-core.
+
+1. https://www.bowlingthismonth.com/bowling-ball-reviews/
+example links to https://www.bowlingthismonth.com/bowling-ball-review/roto-grip-wicked-gremlin/
+has image: https://www.bowlingthismonth.com/btmcontent/uploads/2026/08/roto-grip-wicked-gremlin-1-778x300.jpg
+
+2. https://www.bowlingthismonth.com/archive/
+example links to https://www.bowlingthismonth.com/issue/january-2026/
+links to https://www.bowlingthismonth.com/bowling-ball-review/columbia-300-street-rally/
+has image https://www.bowlingthismonth.com/btmcontent/uploads/2026/01/columbia-300-street-rally-778x300.jpg
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
